@@ -1,3 +1,83 @@
+/* first-header */
+.firstHeader{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: whitesmoke;
+margin: 0 !important;
+}
+
+.sendIcons{
+  color: #FF6F61;
+  font-size: 20px;
+}
+.firstSection{
+  background-color:#151a32 ;
+}
+.dolar{
+  color: #FF6F61;
+}
+
+.firstHeader2{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: whitesmoke;
+border-right: 1px solid whitesmoke;
+padding: 0 7px;
+margin: 0 !important;
+}
+
+.firstContactIcon{
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 0 7px;
+}
+
+.firstContactIcon:hover{
+  color: #FF6F61;
+}
+
+
+/* Add this CSS to your styles */
+
+.firstSection {
+  padding: 1rem; /* Adjust padding for smaller screens */
+}
+
+.firstHeader, .firstHeader2 {
+  margin: 0; /* Remove default margin */
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+.firstContactIcon {
+  margin-left: 10px; /* Add spacing between icons */
+}
+
+@media (max-width: 768px) {
+  .firstHeader {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  .firstHeader2 {
+      font-size: 0.9rem; /* Smaller font for header 2 */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /* home page  */
 .sliderBanner{
     background-image:url(../src//assets//images//banner/Image\ Here.png) ;
@@ -1348,4 +1428,5 @@ line-height: 156%;
 text-align: center;
 color: black;
 }
+
 
