@@ -1,0 +1,1351 @@
+/* home page  */
+.sliderBanner{
+    background-image:url(../src//assets//images//banner/Image\ Here.png) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.sliderBanner1{
+    background-image:url(../src//assets//images//banner/down1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.sliderBanner2{
+    background-image:url(../src//assets//images//banner/down2.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+
+.mega{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+}
+.upTo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+}
+.objective{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+}
+
+.shopNow{
+
+font-weight: 600;
+font-size: 18px;
+line-height: 56px;
+text-align: center;
+width: 196px;
+height: 56px;
+background: #FF6F61;
+display: inline-block;
+text-decoration: none;
+color: whitesmoke;
+}
+
+.swiper-pagination{
+    text-align:left !important;
+}
+.test{
+    
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    left: 50%  !important;
+    transform: translateX(-50%);
+    bottom: 15% !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #FF6F61 ;
+    width: 30px;
+    height: 6px;
+    border-radius: 0px;
+}
+
+
+.upTo{
+    transform: translateY(-200px);
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.swiper-slide-active .upTo{
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+    opacity: 1;
+    visibility: visible ;
+   
+}
+
+.objective{
+    transform: translateY(200px);
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.swiper-slide-active .objective{
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1 ;
+    visibility: visible;
+}
+
+.mega{
+    transform: translateX(200px);
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;  
+}
+.swiper-slide-active .mega{
+    transform: translateX(0px);
+    transition-delay: 0.6s;
+    opacity: 1 ;
+    visibility: visible;
+}
+
+.shopNow{
+    transform: translateX(-200px);
+    transition: 0.8s;
+    opacity: 0;
+    visibility: hidden;  
+}
+
+.swiper-slide-active .shopNow{
+    transform: translateX(0px);
+    transition-delay: 0.8s;
+    opacity: 1 ;
+    visibility: visible;
+}
+
+
+
+
+
+/* arobela-product-section  */
+.new{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.aroberaIcon{
+    font-size: 25px;
+    padding: 5px 0px;
+}
+.aroIcons{
+    padding-left: 250px;
+}
+
+@media (max-width: 991.98px) {
+
+    .aroberaDirection{
+        flex-direction: row;
+    }
+    .aroberaRes{
+        width: 50%;
+    }
+
+    .aroberaRes img{
+        width: 100%;
+    }
+ }
+
+ .price{
+    
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+text-align: center;
+ }
+ .lotion{
+text-align: center;
+font-weight: 500;
+font-size: 18px;
+line-height: 116%;
+text-align: center;
+
+ }
+
+
+  .aroberaRes{
+  position: relative;
+ }
+ .IconPossi{
+    position: absolute;
+    top: 71px;
+    right: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+ }
+ .iconsWish{
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+    background-color: white;
+    margin: 6px 0;
+ }
+ .iconsWish:hover{
+    background-color: #1d1d1d;
+    color: whitesmoke;
+ }
+
+ .aroberaRes:hover .IconPossi{
+    top: 30px;
+    right: 58px;
+    opacity: 1;
+    visibility: visible;
+    
+ }
+
+ .discount{
+    background-color: #FF6F61;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 3px 3px;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+ }
+
+
+ /* banner2 section  */
+ .banner2{
+    background-image: url(../src//assets//images//banner/Mask\ here.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 524px;
+ }
+
+ .bannerGet{
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+   color: white;
+ }
+ .banner2Dami{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: white;
+    
+ }
+ .bnShopNow{
+display: inline-block;
+font-weight: 600;
+font-size: 18px;
+line-height: 250%;
+text-align: center;
+color: white;
+border: 1px solid white;
+width: 180px;
+height: 56px;
+text-decoration: none;
+ }
+ .BannerDamiText{
+    padding-top: 130px;
+ }
+
+ /* Best Seller Products  */
+ .BestPro{
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+text-align: center;
+
+ }
+ .seeAll{
+background-color: #FF6F61;
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: white;
+border: none;
+width: 200px;
+height: 56px;
+ }
+
+ /* carosel-2  */
+
+ .slider2{
+    background-image:url(../src//assets//images/Carosel2/Cr3.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.slider3{
+    background-image:url(../src//assets//images/Carosel2/Cr1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.slider4{
+    background-image:url(../src//assets//images/Carosel2/Cr2.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* carosel3  */
+
+.mySwiper3 {
+    width: 100%;
+    max-width: 1200px; /* adjust the max width to your liking */
+    margin: 40px auto; /* add some margin for better layout */
+  }
+  
+  .card {
+    width: 300px; /* adjust the width to your liking */
+    margin: 20px; /* add some margin for better layout */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-header {
+    padding: 20px;
+    background-color: #f7f7f7; /* add some background color to the header */
+    border-bottom: 1px solid #ddd; /* add some border to the header */
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For small screens (less than 768px) */
+  @media (max-width: 767px) {
+    .mySwiper3 {
+      width: 100%;
+      max-width: 100%; /* make it full width on small screens */
+    }
+    .card {
+      width: 100%; /* make the card full width on small screens */
+      margin: 10px; /* reduce the margin on small screens */
+    }
+  }
+  
+  /* For medium screens (between 768px and 992px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .mySwiper3 {
+      width: 80%; /* make it 80% width on medium screens */
+      max-width: 800px; /* adjust the max width to your liking */
+    }
+    .card {
+      width: 250px; /* adjust the width to your liking */
+      margin: 15px; /* adjust the margin to your liking */
+    }
+  }
+  
+  /* For large screens (greater than 992px) */
+  @media (min-width: 992px) {
+    .mySwiper3 {
+      width: 80%; /* make it 80% width on large screens */
+      max-width: 1200px; /* adjust the max width to your liking */
+    }
+    .card {
+      width: 300px; /* adjust the width to your liking */
+      margin: 20px; /* adjust the margin to your liking */
+    }
+  }
+
+
+  .cardHEader{
+font-weight: 600;
+font-size: 15px;
+line-height: 150%;
+}
+.CardDami{
+  
+font-weight: 400;
+font-size: 15px;
+line-height: 175%;
+}
+.readMore{
+  
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+}
+
+.IconCard{
+    position: absolute;
+    top: 0;
+    right: 152px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.card:hover .IconCard{
+    top: 0;
+    right: 0;
+    opacity: 1;
+    visibility:visible;
+    transition: 0.5s;
+}
+
+.OverView:hover{
+    opacity: 0.8;
+}
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+    
+} */
+
+.iconsWishCard{
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+    background-color: white;
+    margin: 6px 0;
+   
+ }
+
+ .iconsWishCard:hover{
+  background-color: #705a59;
+  color: whitesmoke;
+ }
+ 
+ .cercle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FF6F61;
+ }
+
+ .PriceFree{
+    color: #FF6F61;
+ }
+
+ .free{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+
+ }
+ .allOrder{
+
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+
+ }
+
+
+
+ @media  (max-width: 991px) {
+  .FreeShippingRes{
+    flex-direction: row;
+  }
+
+  .FREEshIP{
+    width: 50%;
+  }
+ }
+
+ .FREEshIP{
+    border-right: 3px solid #FF6F61;
+ }
+
+ /* footersection */
+
+ .ConIcon{
+    font-size: 20px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: whitesmoke;
+    margin: 3px 3px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    }
+
+.ConIcon:hover{
+     background-color: #FF6F61;
+    }
+
+.PaymentIssu{
+        width: 40px;
+        margin: 0px 3px;
+    }
+.footerSec{
+        background-color: #11161E;
+    }
+
+.MyAccount{
+        
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 142%;
+     color: whitesmoke;
+    }
+
+
+.WhistList{
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 175%;
+     color:whitesmoke;
+     margin: 0;
+    }
+
+.WhistList:hover{
+        color: #FF6F61;
+    }
+
+.InEmail{
+     outline: none;
+     border: none;
+    }
+
+.lastSec{
+    background-color: #3a3b3d;
+}    
+.All{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: white;
+padding: 10px 0;
+}
+
+.Aytor{
+    color: #FF6F61;
+}
+
+
+/* about-us  */
+
+.aboutUS{
+font-weight: 700;
+font-size: 48px;
+line-height: 121%;
+text-align: center;
+color: whitesmoke;
+}
+
+.AboutU{
+    background-color: #23303d;
+    height: 400px;
+}
+.Home-About{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: white;
+}
+
+.learn{
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+color: black;
+}
+
+.AboutDami{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+}
+
+.ListSty{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+
+}
+.DiscoverMore{
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: white;
+background-color: #FF6F61;
+width: 180px;
+height: 56px;
+border: none;
+}
+
+.AB{
+    background-color: #f1f3f4;
+}
+/* ourStory  */
+.ourStory{
+    background-color:#f1f3f4 ;
+}
+
+.Our{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: black;
+}
+
+
+.ourDami{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: justify;
+color: black;
+}
+
+.playSet {
+    position: relative;
+}
+
+.PlayBt{
+    position: absolute;
+    top: 190px;
+    right: 253px;
+
+}
+
+.swiper-button-prev{
+    background-color: #f1f3f4;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: black;
+
+}
+
+.swiper-button-next{
+    background-color: #f1f3f4;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: black;
+    font-size: 10px;
+
+}
+
+/* about slider  */
+.name{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+text-align: center;
+color:black;
+}
+
+.founder{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: #FF6F61;
+}
+
+
+/* aetor instagram  */
+
+.aetorIns{
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+color: black;
+text-align: center;
+}
+
+.InstaRes{
+    position: relative;
+}
+
+.FaINs{
+    position: absolute;
+    top: 41px;
+    right: 96px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #FF6F61;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.InstaRes:hover .FaINs{
+      opacity: 1;
+     visibility: visible;
+}
+
+@media  (max-width: 991px){
+    .InsSecRes{
+        flex-direction: row;
+    }
+    .InstaRes{
+        width: 33.33%;
+    }
+
+    .InsTagramImg{
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+
+/* shopGride  */
+
+.showing{
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+text-align: start;
+color: black;
+}
+
+
+
+.IconShopping{
+    position: absolute;
+    top: 71px;
+    right: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+ }
+ .aroberaRes:hover .IconShopping{
+    top: -3px;
+    right: 24px;
+    opacity: 1;
+    visibility: visible;
+    
+ }
+
+
+ .iconsWishShopping{
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+    background-color: white;
+    margin: 6px 0;
+ }
+
+ .iconsWishShopping:hover{
+    background-color: black;
+    color: whitesmoke;
+ }
+
+
+ @media (max-width: 991.98px) {
+    .iconsWishShopping{
+        width: 26px;
+        height: 26px;
+        font-size: 15px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 26px;
+        background-color: white;
+        margin: 4px 0;
+     }
+    
+ }
+
+
+ .NumberCu{
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+ }
+
+ .NumberCu:hover{
+  background-color: black;
+  color: whitesmoke;
+ }
+
+ /* shopD  */
+
+ .Size{
+    width: 350px;
+    height: 35px;
+    outline: none;
+ }
+
+ .CountBox{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  black;
+    font-size: 25px;
+    cursor: pointer;
+
+ }
+.add{
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+color: whitesmoke;
+background-color: #FF6F61;
+width: 223px;
+height: 50px;
+border: none;
+}
+.CountBoxIcon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  black;
+    font-size: 20px;
+    background-color: black;
+    color: whitesmoke;
+    margin: 0 2px;
+}
+
+.letter{
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+color: black;
+}
+
+.pricePro{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+color: black;
+display: inline-block;
+}
+
+.priceOr{
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+text-decoration: line-through;
+color: black;
+}
+
+.shopDami{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: justify;
+color: black;
+}
+
+.inSize{
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: black;
+}
+
+.quantinty{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: black;
+}
+
+
+/* @media (max-width: 991.98px) {
+    .shopIconsDell{
+        flex-direction:row;
+        justify-content: left;
+
+    }
+} */
+    
+/* Default styling for larger devices */
+.CountBox {
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .add {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  .shopIconsDell {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .CountBoxIcon {
+    font-size: 24px;
+    margin: 10px;
+  }
+  
+  /* Media query for small devices (max-width: 576px) */
+  .CountBox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .CountBoxIcon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .add {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add:hover {
+    background-color: #3e8e41;
+  }
+  
+  .shopIconsDell {
+    margin-left: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    .CountBox {
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+    }
+    .CountBoxIcon {
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+    }
+    .add {
+      padding: 8px 15px;
+    }
+    .shopIconsDell {
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .CountBox {
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+    }
+    .CountBoxIcon {
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+    }
+    .add {
+      padding: 6px 12px;
+    }
+    .shopIconsDell {
+      margin-left: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .CountBox {
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+    }
+    .CountBoxIcon {
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+    }
+    .add {
+      padding: 4px 5px;
+    }
+    .shopIconsDell {
+      margin-left: 2px;
+    }
+  }
+
+.smallHed{
+  font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+text-align: center;
+
+margin-top: 40px;
+  }
+
+  .SHodDamiTExt{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: justify;
+  }
+
+
+  @media (max-width: 991.98px) {
+    .Size{
+      width: 80%;
+      height: 35px;
+      outline: none;
+   }
+}
+
+/* realated product  */
+
+.related{
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+text-align: center;
+color: black;
+}
+
+
+/* shop compare  */
+table th, td{  
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.AddToCart{
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: whitesmoke;
+background-color: #FF6F61;
+width: 120px;
+height: 40px;
+border: none;
+}
+
+.tableIcons{
+  font-size: 25px;
+  color: #FF6F61;
+}
+
+.tableImg{
+  padding: 15px 15px;
+ 
+}
+
+.product{
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+text-align: center;
+color: black;
+padding: 5px 10px;
+}
+
+.tableDami{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: black;
+}
+
+.OrChild{
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: black;
+}
+
+
+
+/* Responsive Table Styles */
+.table-container {
+  overflow-x: auto; /* Allows horizontal scrolling on small screens */
+  margin: 20px; /* Adds some margin around the table */
+}
+
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Removes space between cells */
+}
+
+th, td {
+  padding: 10px; /* Adds padding for better readability */
+  text-align: center; /* Centers the text */
+  border: 1px solid #ddd; /* Adds a border around cells */
+}
+
+@media (max-width: 768px) {
+  th, td {
+      display: block; /* Makes each cell a block for better stacking */
+      width: 100%; /* Full width for each cell */
+      box-sizing: border-box; /* Ensures padding is included in width */
+  }
+  
+  tr {
+      display: flex; /* Makes rows flex containers */
+      flex-direction: column; /* Stacks cells vertically */
+      margin-bottom: 15px; /* Adds space between rows */
+  }
+
+  .product {
+      font-weight: bold; /* Makes product names bold */
+  }
+}
+
+
+.searchProduct{
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.cardCom{
+  background-color: #e5dede;
+}
+
+/* shop card  */
+.CardImg{
+  width: 250px;
+}
+
+.cardIn{
+  outline: none;
+  border: none;
+  background-color: #b5b3b3;
+}
+
+.cardIn::placeholder{
+  color: black;
+}
+
+.CardBut{
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: whitesmoke;
+background-color: #FF6F61;
+width: 120px;
+height: 40px;
+border: none;
+margin: 0 5px;
+}
+
+.CardBut2{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 175%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #FF6F61;
+  width: 130px;
+  height: 40px;
+border: none;
+margin: 0 5px;
+}
+
+.subtotal{
+  background-color: #d0c8c8;
+}
+
+.cardTotal{
+font-weight: 700;
+font-size: 24px;
+line-height: 142%;
+color: black;
+}
+
+.cardD{
+  background-color: #e5dede;
+}
+
+/* shop cheekout  */
+.name{
+border: 1px solid #e0e0e0;
+width: 95%;
+height: 50px;
+background-color: #fff;
+outline: none;
+margin-top: 5px;
+}
+
+.name::placeholder{
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+color: #828282;
+text-align: start;
+}
+
+.others{
+border: 1px solid #e0e0e0;
+width: 95%;
+height: 50px;
+background-color: #fff;
+margin-top: 10px;
+outline: none;
+}
+
+.others::placeholder{
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+color: #828282;
+}
+
+.billing{
+font-weight: 700;
+font-size: 30px;
+line-height: 133%;
+color: black;
+}
+
+.message{
+border: 1px solid #e0e0e0;
+width: 95%;
+height: 140px;
+background-color: #fff;
+outline: none;
+}
+
+.cheekLast{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+color: black;
+}
+
+.cheekDami{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: black;
+border: 1px solid #e0e0e0;
+width: 100%;
+height: 60px;
+background-color: #f1f3f4;
+display: flex;
+justify-content: start;
+align-items: center;
+}
+@media (max-width: 991.98px) {
+  .cheekDami{
+width: 95%;
+height: auto;
+  }
+}
+.cheekDamiLast{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: black;
+}
+
+.placeOrder{
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+color: whitesmoke;
+background-color:#FF6F61;
+width: 150px;
+height: 40px;
+border: none;
+}
+
+
+/* whis  */
+.AddTo{
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+text-align: center;
+background-color: #FF6F61;
+color: whitesmoke;
+border: none;
+}
+.cardDW {
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+text-align: center;
+color: black;
+}
+

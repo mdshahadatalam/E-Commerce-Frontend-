@@ -1,0 +1,62 @@
+.parent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    
+}
+.posi{
+    position: relative;
+}
+
+.showed{
+    visibility: visible;
+    opacity: 1;  
+    transform: scale(1);
+}
+
+.cross{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #FF6F61;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 50px;
+    font-size: 25px;
+    color: white;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+.cross:hover{
+    transform: rotate(360deg);
+}
+
+.search{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+.search::placeholder{
+    color: #000;
+}
+.btSearch{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    
+    
+}
