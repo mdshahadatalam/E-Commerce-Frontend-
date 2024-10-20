@@ -15,8 +15,8 @@ export const Blogs = () => {
       </div>
     </section>
 
+  
 
-    
     </>
   )
 }

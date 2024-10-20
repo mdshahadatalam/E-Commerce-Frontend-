@@ -449,6 +449,17 @@ height: 56px;
       width: 100%; /* make the card full width on small screens */
       margin: 10px; /* reduce the margin on small screens */
     }
+    .cardHEader{
+      font-weight:50;
+      font-size: 2px;
+      /* line-height: 50%; */
+      }
+      .CardDami{
+        
+      font-weight:50;
+      font-size: 2px;
+      /* line-height: 100%; */
+      }
   }
   
   /* For medium screens (between 768px and 992px) */

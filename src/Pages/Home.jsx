@@ -432,9 +432,9 @@ const Home = () => {
     <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
   </div>
 
-  <div class="card-body p-2">
-  <h4 className='cardHEader'>Best  Beauty skin. </h4>
-  <p className='CardDami'>Appropriately seize 24/365 markets</p>
+  <div class="card-body p-1">
+  <h4 className='cardHEader m-0'>Best  Beauty skin. </h4>
+  <p className='CardDami m-0'>Appropriately seize 24/365 markets</p>
   </div>
 </div>
 
@@ -448,9 +448,9 @@ const Home = () => {
     <div><span className='iconsWishCard'><FaEye /></span></div>
     <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
   </div>
-  <div class="card-body p-2">
-  <h4 className='cardHEader'>Herbal treatmen scal </h4>
-  <p className='CardDami'>Appropriately seize 24/365 markets</p>
+  <div class="card-body p-1">
+  <h4 className='cardHEader m-0'>Herbal treatmen scal </h4>
+  <p className='CardDami m-0'>Appropriately seize 24/365 markets</p>
   </div>
 </div>
 </SwiperSlide>
@@ -463,9 +463,9 @@ const Home = () => {
     <div><span className='iconsWishCard'><FaEye /></span></div>
     <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
   </div>
-  <div class="card-body p-2">
-  <h4 className='cardHEader'>Traveling Solo Is Awesome</h4>
-  <p className='CardDami'>Appropriately seize 24/365 markets</p>
+  <div class="card-body p-1">
+  <h4 className='cardHEader m-0'>Traveling Solo Is Awesome</h4>
+  <p className='CardDami m-0'>Appropriately seize 24/365 markets</p>
   </div>
 </div>
 
@@ -479,9 +479,9 @@ const Home = () => {
     <div><span className='iconsWishCard'><FaEye /></span></div>
     <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
   </div>
-  <div class="card-body p-2">
-  <h4 className='cardHEader'>A Beautiful  Morning</h4>
-  <p className='CardDami'>Appropriately seize 24/365 markets</p>
+  <div class="card-body p-1">
+  <h4 className='cardHEader m-0'>A Beautiful  Morning</h4>
+  <p className='CardDami m-0'>Appropriately seize 24/365 markets</p>
   </div>
 </div>
 

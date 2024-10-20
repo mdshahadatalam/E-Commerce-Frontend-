@@ -37,7 +37,7 @@ export const Footer = () => {
                 </div>
                 <div className="col-lg-4">
 
-                    <div className='d-flex'>
+                    <div className='d-flex pt-3'>
                         <div> <a href=""> <img className='img-fluid PaymentIssu' src={paypal} alt="" /> </a> </div>
                         <div>  <a href=""><img className='img-fluid PaymentIssu' src={visa} alt="" /></a>  </div>
                         <div>  <a href=""><img className='img-fluid PaymentIssu' src={ world} alt="" /> </a> </div>
