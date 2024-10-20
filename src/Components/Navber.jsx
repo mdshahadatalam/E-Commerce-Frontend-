@@ -93,6 +93,9 @@ export const Navber = () => {
             Blogs
           </a>
           <ul className="dropdown-menu">
+
+          <NavLink to={'/blog'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog</a></li></NavLink>
+
             <NavLink to={'/blogClassic'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic</a></li></NavLink>
             <NavLink to={'/blogClWith'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic With Sidebar</a></li></NavLink>
             <NavLink to={'/blogD'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blogs Details</a></li></NavLink>
@@ -171,7 +174,7 @@ export const Navber = () => {
       {/* <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
         Dropdown button
       </button> */}
-      <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+      {/* <ul className="navbar-nav m-auto mb-2 mb-lg-0">
         <li className="nav-item py-1 px-3">
           <a className="nav-link" aria-current="page" href="#">Home</a>
         </li>
@@ -201,7 +204,96 @@ export const Navber = () => {
           <a className="nav-link" href="#">Contact</a>
         </li>
         
-      </ul>
+      </ul> */}
+
+
+<ul className="navbar-nav m-auto mb-2 mb-lg-0">
+
+<NavLink to={'/'}  className={`${location.pathname == '/' ? " border-1 border-dark border-bottom" : ""} edit`} >
+<li className="nav-item">
+    <a className="nav-link" href="#">Home</a>
+  </li>
+</NavLink>
+
+  
+  <li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Shop
+    </a>
+    <ul className="dropdown-menu">
+      <NavLink to={'/shopGride'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Shop-Grid</a></li> </NavLink>
+      <NavLink to={'/shopD'}    className={'edit'} > <li><a className="dropdown-item" href="#">Shop Details Style One</a></li></NavLink>
+      <NavLink to={'/shopCom'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Compare</a></li></NavLink>
+      <NavLink to={'/shopCard'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Card</a></li></NavLink>
+      <NavLink to={'/shopCheck'}   className={'edit'}  >  <li><a className="dropdown-item" href="#">Checkout</a></li></NavLink>
+      <NavLink to={'/shopWish'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Wishlist</a></li></NavLink>
+       </ul>
+  </li>
+
+  <li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Pages
+    </a>
+    <ul className="dropdown-menu">
+      <NavLink to={'/about'}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
+      <NavLink to={'/error'}  className={'edit'} > <li><a className="dropdown-item" href="#">Errors</a></li></NavLink>
+     </ul>
+  </li>
+  
+  <li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Features
+    </a>
+    <ul className="dropdown-menu">
+      <li><a className="dropdown-item" href="#">Features1</a></li>
+      <li><a className="dropdown-item" href="#">Features2</a></li>
+      <li><a className="dropdown-item" href="#">Features3</a></li>
+      <li><a className="dropdown-item" href="#">Features4</a></li>
+       </ul>
+  </li>
+
+
+  
+  <li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Blogs
+    </a>
+    <ul className="dropdown-menu">
+
+    <NavLink to={'/blog'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog</a></li></NavLink>
+
+      <NavLink to={'/blogClassic'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic</a></li></NavLink>
+      <NavLink to={'/blogClWith'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic With Sidebar</a></li></NavLink>
+      <NavLink to={'/blogD'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blogs Details</a></li></NavLink>
+    </ul>
+  </li>
+
+ <NavLink to={'/contact'}   className={`${location.pathname == '/contact' ? " border-1 border-dark border-bottom" : ""} edit`}>
+ <li className="nav-item">
+    <a className="nav-link" href="#">Contact</a>
+  </li>
+ </NavLink>
+  
+</ul>
+
+<ul className='m-0 d-flex'>
+  <li>
+      <a href="" onClick={ShowSearch}>
+          <span className='icons'><IoMdSearch /></span>
+      </a>
+  </li>
+  <li><a href=""><span className='icons'><FaRegUser /></span></a></li>
+  <li><a href=""><span className='icons'><GiSelfLove /></span></a></li>
+
+
+     <li className='last'>
+         <a href="">
+          <span className='icons'><FaShoppingBag />
+          <span className='number'>0</span>
+           </span>
+        </a>
+  </li>
+</ul>
     </div>
   </div>
 </div>

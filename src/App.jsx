@@ -17,6 +17,7 @@ import { BlogClassic } from './Pages/BlogClassic';
 import { BlogClWithSi } from './Pages/BlogClWithSi';
 import { BlogD } from './Pages/BlogD';
 import { ShopGride2 } from './Pages/ShopGride2';
+import { Blogs } from './Pages/Blogs';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
          <Route path="/error" element={<Error />} />
 
              {/* Blogs  */}
+         <Route path="/blog" element={<Blogs />} />
          <Route path="/blogClassic" element={<BlogClassic />} />
          <Route path="/blogClWith" element={<BlogClWithSi />} />
          <Route path="/blogD" element={<BlogD />} />

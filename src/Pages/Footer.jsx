@@ -24,11 +24,11 @@ export const Footer = () => {
         <div className="container">
             <div className="row justify-content-center align-items-center py-4">
                 <div className="col-lg-4">
-                    <div className='d-flex'>
+                    <div className='d-flex p-0'>
 
-                        <div>  <span className='ConIcon shadow-lg'><FaFacebookF /></span>  </div>
-                        <div>  <span className='ConIcon shadow-lg'><FaTwitter /></span>  </div>
-                        <div>  <span className='ConIcon shadow-lg'><FaInstagram /></span>  </div>
+                        <div>  <span className='ConIconL shadow-lg'><FaFacebookF /></span>  </div>
+                        <div>  <span className='ConIconL shadow-lg'><FaTwitter /></span>  </div>
+                        <div>  <span className='ConIconL shadow-lg'><FaInstagram /></span>  </div>
                     </div>
                 </div>
                 <div className="col-lg-4">

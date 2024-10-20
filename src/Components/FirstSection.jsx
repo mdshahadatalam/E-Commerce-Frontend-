@@ -13,18 +13,18 @@ const FirstSection = () => {
     <div className="container">
         <div className="row">
             <div className="col-lg-12">
-                <div className="d-flex justify-content-between">
+                <div className="d-flex Plan justify-content-between">
                     <div>
                         <p className='firstHeader'>
                             <span className='sendIcons'><FiSend /></span>
                             FREE SHIPPING worldwide for all orders over <span className='dolar'>$150</span>
                         </p>
                     </div>
-                    <div className='d-flex align-items-center'>
+                    <div className='d-flex Plan align-items-center'>
                         <p className='firstHeader2'>Track Your Order</p>
                         <p className='firstHeader2'>English <span><IoIosArrowDown /></span></p>
                         <p className='firstHeader2'>USD <span><IoIosArrowDown /></span></p>
-                        <div className='d-flex'>
+                        <div className='d-flex Plan'>
                             <div><span className='firstContactIcon'><FaFacebookF /></span></div>
                             <div><span className='firstContactIcon'><FaTwitter /></span></div>
                             <div><span className='firstContactIcon'><FaInstagram /></span></div>

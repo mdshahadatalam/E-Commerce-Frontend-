@@ -49,7 +49,7 @@ margin: 0 !important;
   margin: 0; /* Remove default margin */
 }
 
-.d-flex {
+.Plan{
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: space-between; /* Space between items */
@@ -581,7 +581,7 @@ line-height: 175%;
 
  /* footersection */
 
- .ConIcon{
+ .ConIconL{
     font-size: 20px;
     display: flex;
     height: 40px;
@@ -595,7 +595,7 @@ line-height: 175%;
     line-height: 40px;
     }
 
-.ConIcon:hover{
+.ConIconL:hover{
      background-color: #FF6F61;
     }
 
