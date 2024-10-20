@@ -1439,5 +1439,44 @@ line-height: 156%;
 text-align: center;
 color: black;
 }
+/* Blog section  */
+
+.color{
+font-weight: 700;
+font-size: 21px;
+line-height: 142%;
+color: black;
+margin: 0;
+}
+
+.author{
+font-weight: 400;
+font-size: 13px;
+line-height: 135%;
+margin: 0;
+}
+.readMore{
+font-weight: 400;
+font-size: 15px;
+line-height: 135%;
+}
+.readMore:hover{
+  color: #FF6F61;
+  text-decoration: underline;
+}
+
+.january{
+ background-color: #6c6b6b;
+ color: whitesmoke;
+ padding: 2px 2px;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.januaryPossi{
+  position: relative;
+}
+
 
 
