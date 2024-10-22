@@ -73,17 +73,13 @@ export const Navber = () => {
            </ul>
         </li>
         
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Features
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Features1</a></li>
-            <li><a className="dropdown-item" href="#">Features2</a></li>
-            <li><a className="dropdown-item" href="#">Features3</a></li>
-            <li><a className="dropdown-item" href="#">Features4</a></li>
-             </ul>
+        
+
+    <NavLink to={'/feature'}  className={`${location.pathname == '/feature' ? " border-1 border-dark border-bottom" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link" href="#">Feature</a>
         </li>
+      </NavLink>
 
 
 
@@ -231,17 +227,11 @@ export const Navber = () => {
      </ul>
   </li>
   
-  <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Features
-    </a>
-    <ul className="dropdown-menu">
-      <li><a className="dropdown-item" href="#">Features1</a></li>
-      <li><a className="dropdown-item" href="#">Features2</a></li>
-      <li><a className="dropdown-item" href="#">Features3</a></li>
-      <li><a className="dropdown-item" href="#">Features4</a></li>
-       </ul>
-  </li>
+  <NavLink to={'/feature'}  className={`${location.pathname == '/feature' ? "text-danger" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link" href="#">Feature</a>
+        </li>
+      </NavLink>
 
 
   <NavLink to={'/blog'}  className={`${location.pathname == '/blog' ? "text-danger" : ""} edit`} >

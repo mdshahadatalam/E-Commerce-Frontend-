@@ -18,6 +18,7 @@ import { BlogClWithSi } from './Pages/BlogClWithSi';
 import { BlogD } from './Pages/BlogD';
 import { ShopGride2 } from './Pages/ShopGride2';
 import { Blogs } from './Pages/Blogs';
+import { Features } from './Pages/Features';
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
          <Route path="/about" element={<About />} />
          <Route path="/error" element={<Error />} />
 
+         {/* fueature  */}
+
+         <Route path="/feature" element={<Features />} />
              {/* Blogs  */}
          <Route path="/blog" element={<Blogs />} />
          <Route path="/blogClassic" element={<BlogClassic />} />

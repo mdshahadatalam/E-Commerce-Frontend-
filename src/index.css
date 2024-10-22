@@ -1672,3 +1672,24 @@ width: 150px;
 height: 46px;
 background-color: black;
 }
+
+/* Error section  */
+.Error{
+  background-image: url(./assets//images/Error/404.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.backTo{
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: #fff;
+width: 150px;
+height: 46px;
+background-color: #FF6F61;
+border: none;
+}
