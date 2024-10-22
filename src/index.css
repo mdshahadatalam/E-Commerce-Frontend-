@@ -1491,5 +1491,90 @@ line-height: 162%;
 color: #444;
 }
 
+/* blog classic slider  */
+.searchHere{
+width: 212px;
+height: 40px;
+border-color:#c3c6c6;
+outline: none;
+border: 1px solid  #c3c6c6;
 
+border-top: none;
+border-bottom: none;
+border-left: none;
+background-color:#f5f8f8 ;
+}
+
+
+.blogClassSlidFashion::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #828282;
+}
+.searchbtn{
+  border: none;
+  background-color:#fff;
+  border-top:none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 1px solid  #c3c6c6;
+  background-color:#f5f8f8 ;
+}
+
+.blogClassSlidFashion{
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: black;
+}
+
+.blogClassSlidFashion:hover{
+  color: #FF6F61;
+}
+.cata{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+color: black;
+}
+
+.cata:hover{
+  text-decoration: underline #FF6F61 ;
+}
+
+.BCSLi {
+  width: 80px;
+}
+
+.BSDami{
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: black;
+}
+
+.tags{
+  background-color:#f5f8f8;
+  padding: 3px;
+  margin-top: 5px;
+  display: inline-block;
+  
+}
+.tags:hover{
+  background-color: rgb(162, 162, 207);
+}
+
+.discountBl{
+font-weight: 700;
+font-size: 28px;
+line-height: 121%;
+color: #fff;
+}
+
+.discountBlse{
+  position: absolute;
+  top: 137px;
+  right: 138px;
+}
 
