@@ -1614,3 +1614,61 @@ margin: 0;
 .contactI:hover{
   color: #FF6F61;
 }
+
+.getIn{
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+}
+
+.conInpt{
+width: 250px;
+height: 40px;
+background-color: #f1f3f4;
+border: none;
+outline: none;
+margin: 5px 5px;
+}
+
+.conTnMes{
+width: 512px;
+height: 250px;
+background-color: #f1f3f4;
+border: none;
+outline: none;
+margin: 5px 5px;
+}
+.conInpt::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #828282;
+}
+
+.conTnMes::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #828282;
+}
+
+@media (max-width: 991.98px) {
+
+  .conInpt{
+    width: 80%;
+  }
+  .conTnMes{
+    width: 80%;
+  }
+}
+
+.contBtn{
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: #fff;
+width: 150px;
+height: 46px;
+background-color: black;
+}

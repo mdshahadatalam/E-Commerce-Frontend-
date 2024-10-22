@@ -9,6 +9,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
+import blogs from '../assets/images/Blogs/blog (3).jpg'
+
 export const Contact = () => {
   return (
   <>
@@ -74,7 +76,7 @@ export const Contact = () => {
                     <p className='available'>Visit specific sites to find us online  innovate bricks-and-clicks materials.</p>
                   <h4 className='customar'>Customer Support:</h4>
 
-                  <div className='d-flex p-0'>
+                  <div className='d-flex p-1'>
 
                         <div>  <span className='contactI'><FaFacebookF /></span>  </div>
                         <div>  <span className='contactI'><FaTwitter /></span>  </div>
@@ -95,6 +97,36 @@ export const Contact = () => {
             </div>
           </div>
         </section>
+
+        <section className='py-5'>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6 p-0">
+                <div className='shadow-lg bg-white rounded p-3'>
+                  <h4 className='getIn'>Get in touch</h4>
+                  <form action="">
+                    <input className='conInpt' type="text" placeholder='Your name*' />
+                    <input className='conInpt' type="email" placeholder='Your email*' />
+                    <input className='conInpt' type="number" placeholder='Your number*' />
+                    <input className='conInpt' type="text" placeholder='Your title*' />
+                    <textarea  className='conTnMes'  name="" id="" placeholder='Message*'></textarea>
+
+
+                    <div className='text-center'>
+                      <button className='contBtn'>Send Massage</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+              <div className="col-lg-6 p-0">
+              <img className='img-fluid h-100' src={blogs} alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
   </>
   )
 }
