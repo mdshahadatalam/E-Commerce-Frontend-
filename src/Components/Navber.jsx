@@ -70,7 +70,6 @@ export const Navber = () => {
           </a>
           <ul className="dropdown-menu">
             <NavLink to={'/about'}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
-            <NavLink to={'/error'}  className={'edit'} > <li><a className="dropdown-item" href="#">Errors</a></li></NavLink>
            </ul>
         </li>
         
@@ -87,20 +86,13 @@ export const Navber = () => {
         </li>
 
 
-        
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blogs
-          </a>
-          <ul className="dropdown-menu">
 
-          <NavLink to={'/blog'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog</a></li></NavLink>
 
-            <NavLink to={'/blogClassic'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic</a></li></NavLink>
-            <NavLink to={'/blogClWith'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic With Sidebar</a></li></NavLink>
-            <NavLink to={'/blogD'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blogs Details</a></li></NavLink>
-          </ul>
+      <NavLink to={'/blog'}  className={`${location.pathname == '/blog' ? " border-1 border-dark border-bottom" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link" href="#">Blog</a>
         </li>
+      </NavLink>
 
        <NavLink to={'/contact'}   className={`${location.pathname == '/contact' ? " border-1 border-dark border-bottom" : ""} edit`}>
        <li className="nav-item">
@@ -209,7 +201,7 @@ export const Navber = () => {
 
 <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
-<NavLink to={'/'}  className={`${location.pathname == '/' ? " border-1 border-dark border-bottom" : ""} edit`} >
+<NavLink to={'/'}  className={`${location.pathname == '/' ? "text-danger" : ""} edit`} >
 <li className="nav-item">
     <a className="nav-link" href="#">Home</a>
   </li>
@@ -236,7 +228,6 @@ export const Navber = () => {
     </a>
     <ul className="dropdown-menu">
       <NavLink to={'/about'}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
-      <NavLink to={'/error'}  className={'edit'} > <li><a className="dropdown-item" href="#">Errors</a></li></NavLink>
      </ul>
   </li>
   
@@ -253,22 +244,15 @@ export const Navber = () => {
   </li>
 
 
-  
-  <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Blogs
-    </a>
-    <ul className="dropdown-menu">
+  <NavLink to={'/blog'}  className={`${location.pathname == '/blog' ? "text-danger" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link" href="#">Blog</a>
+        </li>
+      </NavLink>
 
-    <NavLink to={'/blog'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog</a></li></NavLink>
 
-      <NavLink to={'/blogClassic'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic</a></li></NavLink>
-      <NavLink to={'/blogClWith'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blog Classic With Sidebar</a></li></NavLink>
-      <NavLink to={'/blogD'}  className={'edit'} > <li><a className="dropdown-item" href="#">Blogs Details</a></li></NavLink>
-    </ul>
-  </li>
 
- <NavLink to={'/contact'}   className={`${location.pathname == '/contact' ? " border-1 border-dark border-bottom" : ""} edit`}>
+ <NavLink to={'/contact'}   className={`${location.pathname == '/contact' ? "text-danger" : ""} edit`}>
  <li className="nav-item">
     <a className="nav-link" href="#">Contact</a>
   </li>
