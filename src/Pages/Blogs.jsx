@@ -9,6 +9,7 @@ import blog6 from '../assets/images/Blogs/blog (6).jpg'
 import blog7 from '../assets/images/Blogs/blog (7).jpg'
 import blog8 from '../assets/images/Blogs/blog (8).jpg'
 import blog9 from '../assets/images/Blogs/blog (9).jpg'
+import { Link } from 'react-router-dom';
 
 
 export const Blogs = () => {
@@ -31,38 +32,45 @@ export const Blogs = () => {
         <div className="row blogRes ">
           <div className="col-lg-4">
             <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog1} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog1} alt="" /></Link>
 
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Color, Size, Material Swatches</h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
           <div className="col-lg-4">
           <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog2} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog2} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Fashion coats 2022: key trends</h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
           <div className="col-lg-4">
           <div className='shadow-lg bg-light rounded mt- januaryPossi'>
-              <img className='img-fluid' src={blog3} alt="" />
+             <Link to={'/blogClassic'} className='link'> <img className='img-fluid' src={blog3} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Fashion Women Long Skat </h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
@@ -71,37 +79,44 @@ export const Blogs = () => {
         <div className="row blogRes ">
           <div className="col-lg-4">
             <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog4} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog4} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Minimal Design Inspiration</h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
           <div className="col-lg-4">
           <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog5} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog5} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Fashion T-shirt 2022: key trends</h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
           <div className="col-lg-4">
           <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog6} alt="" />
+              <Link  to={'/blogClassic'} className='link'><img className='img-fluid' src={blog6} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Women Stylish Bag & Shose </h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
@@ -110,37 +125,46 @@ export const Blogs = () => {
         <div className="row blogRes ">
           <div className="col-lg-4">
             <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog8} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog8} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Women Fashionable Coats 2022</h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
           <div className="col-lg-4">
           <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog8} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog8} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>Fashion Women New key trends</h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              
+              <Link to={'/blogClassic'} className='link'> <span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>
           <div className="col-lg-4">
           <div className='shadow-lg bg-light rounded mt-2 januaryPossi'>
-              <img className='img-fluid' src={blog9} alt="" />
+              <Link to={'/blogClassic'} className='link'><img className='img-fluid' src={blog9} alt="" /></Link>
               <span className='january'>January 04, 2022</span>
 
               <div className='p-3'>
               <h4 className='color py-1'>New Trends Hudi Sweater </h4>
               <p className='author py-1'>Authoritatively innovate reliable users for team building intellectual capital. Assertively.</p>
-              <span className='readMore'>Read More <IoIosArrowRoundForward /> </span>
+
+              
+              <Link to={'/blogClassic'} className='link'><span className='readMore'>Read More <IoIosArrowRoundForward /> </span></Link>
+
               </div>
             </div>
           </div>

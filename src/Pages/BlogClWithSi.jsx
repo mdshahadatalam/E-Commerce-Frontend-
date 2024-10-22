@@ -24,6 +24,7 @@ import bcsl from '../assets/images/blogClaSli/BCSL.jpg'
 // import { BlogClassic } from './BlogClassic';
 
 import { IoSearchOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 export const BlogClWithSi = () => {
   return (
@@ -85,7 +86,7 @@ export const BlogClWithSi = () => {
                          <small className='fashion py-1'>Michel-Fashion Admin || January 04, 2022</small>
                          <h4 className='color py-1'>Color, Size, Material Swatches</h4>
                            <p className='author py-1'>Compellingly extend client-based catalysts for change with adaptive information. Appropriately repurpose inexpensive networks vis-a-vis turnkey customer service.Distinctively drive viral catalysts for change whereas high-payoff supply chains. Progressively myocardinate highly efficient meta-services via cutting-edge core competencies. Dynamically target mission.</p>
-                          <span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span>
+                          <Link to={'/blogD'}  className='link' ><span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span></Link>
                         </div>
              </div>
       
@@ -133,7 +134,7 @@ export const BlogClWithSi = () => {
                          <small className='fashion py-1'>Michel-Fashion Admin || January 04, 2022</small>
                          <h4 className='color py-1'>Fashion coats 2022: key trends</h4>
                            <p className='author py-1'>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical process improvements after error-free results. Interactiv - ely monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless quality vectors without end-to-end strategic theme areas.</p>
-                          <span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span>
+                           <Link to={'/blogD'}  className='link' ><span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span></Link>
                         </div>
              </div>
       
@@ -181,7 +182,7 @@ export const BlogClWithSi = () => {
                          <small className='fashion py-1'>Michel-Fashion Admin || January 04, 2022</small>
                          <h4 className='color py-1'>Minimal Design Inspiration</h4>
                            <p className='author py-1'>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical process improvements after error-free results. Interactiv - ely monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless quality vectors without end-to-end strategic theme areas.</p>
-                          <span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span>
+                           <Link to={'/blogD'}  className='link' ><span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span></Link>
                         </div>
              </div>
       
@@ -230,7 +231,7 @@ export const BlogClWithSi = () => {
                          <small className='fashion py-1'>Michel-Fashion Admin || January 04, 2022</small>
                          <h4 className='color py-1'>Fashion T-shirt 2022: key trends</h4>
                            <p className='author py-1'>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical process improvements after error-free results. Interactiv- ely monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless quality vectors without end-to-end strategic theme areas.</p>
-                          <span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span>
+                           <Link to={'/blogD'}  className='link' ><span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span></Link>
                         </div>
              </div>
       
@@ -280,7 +281,7 @@ export const BlogClWithSi = () => {
                          <small className='fashion py-1'>Michel-Fashion Admin || January 04, 2022</small>
                          <h4 className='color py-1'>Women Fashionable Coats 2022</h4>
                            <p className='author py-1'>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical process improvements after error-free results. Interactiv- ely monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless quality vectors without end-to-end strategic theme areas.</p>
-                          <span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span>
+                           <Link to={'/blogD'}  className='link' ><span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span></Link>
                         </div>
              </div>
       
@@ -330,7 +331,7 @@ export const BlogClWithSi = () => {
                          <small className='fashion py-1'>Michel-Fashion Admin || January 04, 2022</small>
                          <h4 className='color py-1'>Fashion Women New key trends</h4>
                            <p className='author py-1'>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical process improvements after error-free results. Interactiv - ely monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless quality vectors without end-to-end strategic theme areas.</p>
-                          <span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span>
+                           <Link to={'/blogD'}  className='link' ><span className='readMore py-1'>Read More <IoIosArrowRoundForward /></span></Link>
                         </div>
              </div>
       
@@ -460,7 +461,7 @@ export const BlogClWithSi = () => {
 
 
                 <div className='pt-5 position-relative'>
-                  <img className='img-fluid' src={bcsl} alt="" />
+                <Link to={'/blogD'} className='link' >  <img className='img-fluid' src={bcsl} alt="" /></Link>
 
                   <div className='discountBlse'>
                     <h4 className='discountBl'>#Black Friday</h4>
