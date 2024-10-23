@@ -46,7 +46,7 @@ const handleDecr =()=>{
       </tr>
 
       <tr>
-        <td>  <img className='img-fluid CardImg p-2' src={colths1} alt="" /> </td>
+        <td>  <img className='img-fluid CardImg opacity-0 p-2' src={colths1} alt="" /> </td>
         <td>  <p className='product'>Jacket Hoodie Sweater</p> </td>
         <td>  <p className='OrChild' >$130.00</p> </td>
         <td className='text-center'>

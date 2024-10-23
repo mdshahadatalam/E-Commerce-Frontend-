@@ -49,14 +49,90 @@ export const ShopGride = () => {
         <h4 className='showing py-4'>Showing 12 of 16 Post</h4>
         <div className="row aroberaDirection ">
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid ProImg' src={colths1} alt="" />
+
+           <Link to={'/shopD'}>  <img className='img-fluid ProImg' src={colths1} alt="image" /></Link>
+
             <span className='discount'>New</span>
+
             <div data-coreui-toggle="rating" data-coreui-value="3"></div>
+
                <div className='IconShopping'>
                <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
+               </div>
+
+            <div>
+            <h4 className='price pt-1'>$150.65</h4>
+            <h4 className='lotion'>Lotion Shower gel</h4>
+            </div>
+
+          </div>
+
+
+          <div className="col-lg-3 aroberaRes ">
+           <Link to={'/shopD'}>  <img className='img-fluid' src={colths2} alt="image" /></Link>
+
+            <span className='discount'>New</span>
+
+            <div className='IconShopping'>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
+               </div>
+
+            <div>
+            <h4 className='price pt-1'>$250.65</h4>
+            <h4 className='lotion'>Argan Cream Body Butter</h4>
+            </div>
+          </div>
+
+          <div className="col-lg-3 aroberaRes ">
+            <Link to={'/shopD'}> <img className='img-fluid' src={colths3} alt="image" /></Link>
+            <span className='discount'>New</span>
+            <div className='IconShopping'>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
+               </div>
+            
+            <h4 className='price pt-1'>$175.65</h4>
+            <h4 className='lotion'>Manicure Gel</h4>
+          </div>
+          <div className="col-lg-3 aroberaRes ">
+            <Link to={'/shopD'}> <img className='img-fluid' src={colths4} alt="image" /></Link>
+            <span className='discount'>New</span>
+            <div className='IconShopping'>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
+               </div>
+           <div>
+           <h4 className='price pt-1'>$75.65</h4>
+           <h4 className='lotion'>Manicure Gel nails, makeup</h4>
+           </div>
+          </div>
+        </div>
+
+
+        <div className="row aroberaDirection ">
+          <div className="col-lg-3 aroberaRes ">
+            <Link to={'/shopD'}> <img className='img-fluid ProImg' src={colths5} alt="image" /></Link>
+            <span className='discount'>New</span>
+            <div data-coreui-toggle="rating" data-coreui-value="3"></div>
+            <div className='IconShopping'>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
                 
                </div>
             <div>
@@ -68,14 +144,15 @@ export const ShopGride = () => {
 
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths2} alt="" />
+          <Link to={'/shopD'}>   <img className='img-fluid' src={colths6} alt="image" /></Link>
 
             <span className='discount'>New</span>
             <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
             <div>
             <h4 className='price pt-1'>$250.65</h4>
@@ -84,91 +161,28 @@ export const ShopGride = () => {
           </div>
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths3} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={colths7} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
             
             <h4 className='price pt-1'>$175.65</h4>
             <h4 className='lotion'>Manicure Gel</h4>
           </div>
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths4} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={colths8} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
-               </div>
-           <div>
-           <h4 className='price pt-1'>$75.65</h4>
-           <h4 className='lotion'>Manicure Gel nails, makeup</h4>
-           </div>
-          </div>
-        </div>
-
-
-        <div className="row aroberaDirection ">
-          <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid ProImg' src={colths5} alt="" />
-            <span className='discount'>New</span>
-            <div data-coreui-toggle="rating" data-coreui-value="3"></div>
-               <div className='IconShopping'>
-               <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
-               </div>
-            <div>
-            <h4 className='price pt-1'>$150.65</h4>
-            <h4 className='lotion'>Lotion Shower gel</h4>
-            </div>
-
-          </div>
-
-
-          <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths6} alt="" />
-
-            <span className='discount'>New</span>
-            <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
-               </div>
-            <div>
-            <h4 className='price pt-1'>$250.65</h4>
-            <h4 className='lotion'>Argan Cream Body Butter</h4>
-            </div>
-          </div>
-
-          <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths7} alt="" />
-            <span className='discount'>New</span>
-            <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
-               </div>
-            
-            <h4 className='price pt-1'>$175.65</h4>
-            <h4 className='lotion'>Manicure Gel</h4>
-          </div>
-          <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths8} alt="" />
-            <span className='discount'>New</span>
-            <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
            <div>
            <h4 className='price pt-1'>$75.65</h4>
@@ -181,14 +195,15 @@ export const ShopGride = () => {
 
         <div className="row aroberaDirection ">
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid ProImg' src={colths9} alt="" />
+            <Link to={'/shopD'}><img className='img-fluid ProImg' src={colths9} alt="image" /></Link>
             <span className='discount'>New</span>
             <div data-coreui-toggle="rating" data-coreui-value="3"></div>
-               <div className='IconShopping'>
-               <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+            <div className='IconShopping'>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
             <div>
             <h4 className='price pt-1'>$150.65</h4>
@@ -199,14 +214,15 @@ export const ShopGride = () => {
 
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths10} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={colths10} alt="image" /></Link>
 
             <span className='discount'>New</span>
             <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
             <div>
             <h4 className='price pt-1'>$250.65</h4>
@@ -215,26 +231,28 @@ export const ShopGride = () => {
           </div>
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths11} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={colths11} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
             
             <h4 className='price pt-1'>$175.65</h4>
             <h4 className='lotion'>Manicure Gel</h4>
           </div>
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={colths12} alt="" />
+           <Link to={'/shopD'}>  <img className='img-fluid' src={colths12} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconShopping'>
-            <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
-                <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
-                <div><span className='iconsWishShopping'><FaEye /></span></div>
-                <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
+                <div> <Link  to={'/shopWish'} className='link' > <span className='iconsWishShopping'><GiEternalLove /></span> </Link></div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishShopping'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishShopping'><BsBarChartLineFill /></span></Link> </div>
+                
                </div>
            <div>
            <h4 className='price pt-1'>$75.65</h4>

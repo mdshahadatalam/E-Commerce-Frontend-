@@ -50,19 +50,11 @@ export const Navber = () => {
       </NavLink>
 
         
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Shop
-          </a>
-          <ul className="dropdown-menu">
-            <NavLink to={'/shopGride'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Shop-Grid</a></li> </NavLink>
-            <NavLink to={'/shopD'}    className={'edit'} > <li><a className="dropdown-item" href="#">Shop Details Style One</a></li></NavLink>
-            <NavLink to={'/shopCom'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Compare</a></li></NavLink>
-            <NavLink to={'/shopCard'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Card</a></li></NavLink>
-            <NavLink to={'/shopCheck'}   className={'edit'}  >  <li><a className="dropdown-item" href="#">Checkout</a></li></NavLink>
-            <NavLink to={'/shopWish'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Wishlist</a></li></NavLink>
-             </ul>
+      <NavLink to={'/shopGride'}  className={`${location.pathname == '/shopGride' ? " border-1 border-dark border-bottom" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link" href="#">Shop</a>
         </li>
+      </NavLink>
 
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -204,19 +196,11 @@ export const Navber = () => {
 </NavLink>
 
   
-  <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Shop
-    </a>
-    <ul className="dropdown-menu">
-      <NavLink to={'/shopGride'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Shop-Grid</a></li> </NavLink>
-      <NavLink to={'/shopD'}    className={'edit'} > <li><a className="dropdown-item" href="#">Shop Details Style One</a></li></NavLink>
-      <NavLink to={'/shopCom'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Compare</a></li></NavLink>
-      <NavLink to={'/shopCard'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Card</a></li></NavLink>
-      <NavLink to={'/shopCheck'}   className={'edit'}  >  <li><a className="dropdown-item" href="#">Checkout</a></li></NavLink>
-      <NavLink to={'/shopWish'}   className={'edit'}  > <li><a className="dropdown-item" href="#">Wishlist</a></li></NavLink>
-       </ul>
-  </li>
+<NavLink to={'/shopGride'}  className={`${location.pathname == '/shopGride' ? "text-danger" : ""} edit`} >
+      <li className="nav-item">
+          <a className="nav-link" href="#">Shop</a>
+        </li>
+      </NavLink>
 
   <li className="nav-item dropdown">
     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
