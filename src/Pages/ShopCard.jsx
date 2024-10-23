@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import colths from '../assets/images/Colths2/2Colths (1).jpg'
 import { RiDeleteBin5Line } from "react-icons/ri";
 
+import colths1 from '../assets/images/Colths/colths (1).jpg'
+
 export const ShopCard = () => {
 
 
@@ -44,7 +46,7 @@ const handleDecr =()=>{
       </tr>
 
       <tr>
-        <td>  <img className='img-fluid CardImg p-2' src={colths} alt="" /> </td>
+        <td>  <img className='img-fluid CardImg p-2' src={colths1} alt="" /> </td>
         <td>  <p className='product'>Jacket Hoodie Sweater</p> </td>
         <td>  <p className='OrChild' >$130.00</p> </td>
         <td className='text-center'>

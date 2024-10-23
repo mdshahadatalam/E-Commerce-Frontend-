@@ -53,7 +53,7 @@ export const ShopGride = () => {
             <span className='discount'>New</span>
             <div data-coreui-toggle="rating" data-coreui-value="3"></div>
                <div className='IconShopping'>
-               <div> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></div>
+               <div>  <Link to={'/shopCard'}> <span className='iconsWishShopping text-danger'><CiShoppingCart /></span></Link>  </div>
                 <div><span className='iconsWishShopping'><GiEternalLove /></span></div>
                 <div><span className='iconsWishShopping'><FaEye /></span></div>
                 <div><span className='iconsWishShopping'><BsBarChartLineFill /></span></div>
