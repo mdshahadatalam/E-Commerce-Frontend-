@@ -3,6 +3,7 @@ import AboutPic from '../assets/images/About/Group 37.png'
 import item from '../assets/images/Items/Item 2.png'
 import play from '../assets/images/About/Play Button.png'
 
+import author from '../assets/images/About/author.jpg'
 
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -177,15 +178,15 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={BestPro2} class="card-img-top OverView " alt="..."/>
-       <div className='IconCard'>
+<img src={author} class="card-img-top OverView " alt="image"/>
+       {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
           <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
-      </div>
+      </div> */}
      <div class="card-body p-2">
-        <h4 className='name'>Michel Richard</h4>
-        <p className='founder'>Founder</p>
+        <h4 className='name m-0'>Michel Richard</h4>
+        <p className='founder m-0'>Founder</p>
 
      <div className='d-flex justify-content-center p-0'>
      <span className='py-2 px-2'><FaFacebookF /></span> 
@@ -205,15 +206,15 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={BestPro2} class="card-img-top OverView " alt="..."/>
-       <div className='IconCard'>
+<img src={author} class="card-img-top OverView " alt="image"/>
+       {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
           <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
-      </div>
+      </div> */}
      <div class="card-body p-2">
-        <h4 className='name'>Imon Hossain</h4>
-        <p className='founder'>Founder</p>
+        <h4 className='name m-0'>Imon Hossain</h4>
+        <p className='founder m-0'>Founder</p>
 
      <div className='d-flex justify-content-center p-0'>
      <span className='py-2 px-2'><FaFacebookF /></span> 
@@ -231,15 +232,15 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={BestPro2} class="card-img-top OverView " alt="..."/>
-       <div className='IconCard'>
+<img src={author} class="card-img-top OverView " alt="image"/>
+       {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
           <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
-      </div>
+      </div> */}
      <div class="card-body p-2">
-        <h4 className='name'>Sudjida Lufz</h4>
-        <p className='founder'>Founder</p>
+        <h4 className='name m-0'>Sudjida Lufz</h4>
+        <p className='founder m-0'>Founder</p>
 
      <div className='d-flex justify-content-center p-0'>
      <span className='py-2 px-2'><FaFacebookF /></span> 
@@ -258,15 +259,17 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={BestPro2} class="card-img-top OverView " alt="..."/>
-       <div className='IconCard'>
+<img src={author} class="card-img-top OverView " alt="image"/>
+
+       {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
           <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
-      </div>
+      </div> */}
+
      <div class="card-body p-2">
-        <h4 className='name'>Henry Josep</h4>
-        <p className='founder'>Founder</p>
+        <h4 className='name m-0'>Henry Josep</h4>
+        <p className='founder m-0'>Founder</p>
 
      <div className='d-flex justify-content-center p-0'>
      <span className='py-2 px-2'><FaFacebookF /></span> 

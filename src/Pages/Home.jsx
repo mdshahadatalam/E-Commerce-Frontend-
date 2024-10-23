@@ -59,6 +59,7 @@ const Home = () => {
       className="mySwiper">
 
         <SwiperSlide className='sliderBanner'>
+          
           <div className="container">
             <p className='mega'>Mega Sale</p>
             <h3 className='upTo'>Up To 35% Off</h3>
