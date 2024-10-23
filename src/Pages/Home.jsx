@@ -34,6 +34,7 @@ import BestPro4 from '../assets/images/Carosel2/BestPro (4).jpg'
 import { GiEternalLove } from "react-icons/gi";
 import { FaEye } from "react-icons/fa";
 import { BsBarChartLineFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 
 
@@ -111,7 +112,7 @@ const Home = () => {
         </div>
       </section>
 
-    {/* arobela-product-section  */}
+    {/* new arobela-product-section  */}
 
     <section className='py-4'>
        <div className="container">
@@ -127,12 +128,12 @@ const Home = () => {
  
         <div className="row aroberaDirection ">
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid ProImg' src={product1} alt="" />
+            <Link to={'/shopD'} className='link'> <img className='img-fluid ProImg' src={product1} alt="image" /></Link>
             <div data-coreui-toggle="rating" data-coreui-value="3"></div>
                <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             <div>
             <h4 className='price pt-1'>$150.65</h4>
@@ -143,13 +144,13 @@ const Home = () => {
 
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={product2} alt="" />
+           <Link to={'/shopD'} className='link'>  <img className='img-fluid' src={product2} alt="image" /></Link>
 
             <span className='discount'>-45%</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             <div>
             <h4 className='price pt-1'>$250.65</h4>
@@ -158,24 +159,24 @@ const Home = () => {
           </div>
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={product3} alt="" />
+            <Link to={'/shopD'} className='link'> <img className='img-fluid' src={product3} alt="image" /></Link>
             <span className='discount'>50%</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             
             <h4 className='price pt-1'>$175.65</h4>
             <h4 className='lotion'>Manicure Gel</h4>
           </div>
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={product4} alt="" />
+            <Link to={'/shopD'} className='link'> <img className='img-fluid' src={product4} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
            <div>
            <h4 className='price pt-1'>$75.65</h4>
@@ -213,13 +214,13 @@ const Home = () => {
         <h4 className='BestPro py-4'>Best Seller Products</h4>
         <div className="row aroberaDirection ">
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid ProImg' src={Best} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid ProImg' src={Best} alt="image" /></Link>
             <span className='discount'>New</span>
             <div data-coreui-toggle="rating" data-coreui-value="3"></div>
-               <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+            <div className='IconPossi'>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             <div>
             <h4 className='price pt-1'>$150.65</h4>
@@ -230,13 +231,13 @@ const Home = () => {
 
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={Best2} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={Best2} alt="image" /></Link>
 
             <span className='discount'>-45%</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             <div>
             <h4 className='price pt-1'>$250.65</h4>
@@ -245,24 +246,24 @@ const Home = () => {
           </div>
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={Best3} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={Best3} alt="image" /></Link>
             <span className='discount'>sale</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             
             <h4 className='price pt-1'>$175.65</h4>
             <h4 className='lotion'>Manicure Gel</h4>
           </div>
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={Best4} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={Best4} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
            <div>
            <h4 className='price pt-1'>$75.65</h4>
@@ -274,13 +275,13 @@ const Home = () => {
 
         <div className="row aroberaDirection ">
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid ProImg' src={Best5} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid ProImg' src={Best5} alt="image" /></Link>
             <span className='discount'>New</span>
             <div data-coreui-toggle="rating" data-coreui-value="3"></div>
-               <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+            <div className='IconPossi'>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             <div>
             <h4 className='price pt-1'>$150.65</h4>
@@ -291,13 +292,13 @@ const Home = () => {
 
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={Best6} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={Best6} alt="image" /></Link>
 
             <span className='discount'>-45%</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             <div>
             <h4 className='price pt-1'>$250.65</h4>
@@ -306,24 +307,24 @@ const Home = () => {
           </div>
 
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={Best7} alt="" />
+          <Link to={'/shopD'}>   <img className='img-fluid' src={Best7} alt="image" /></Link>
             <span className='discount'>sale</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
             
             <h4 className='price pt-1'>$175.65</h4>
             <h4 className='lotion'>Manicure Gel</h4>
           </div>
           <div className="col-lg-3 aroberaRes ">
-            <img className='img-fluid' src={Best8} alt="" />
+            <Link to={'/shopD'}> <img className='img-fluid' src={Best8} alt="image" /></Link>
             <span className='discount'>New</span>
             <div className='IconPossi'>
-                <div><span className='iconsWish'><GiEternalLove /></span></div>
-                <div><span className='iconsWish'><FaEye /></span></div>
-                <div><span className='iconsWish'><BsBarChartLineFill /></span></div>
+                <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
+                <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
+                <div> <Link to={'/shopCom'} className='link' > <span className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
                </div>
            <div>
            <h4 className='price pt-1'>$75.65</h4>
@@ -425,12 +426,12 @@ const Home = () => {
 
   <SwiperSlide className='Hid'>
   <div class="card shadow-md">
-  <img src={BestPro1} class="card-img-top  OverView" alt="..."/>
+  <Link to={'/shopD'}> <img src={BestPro1} class="card-img-top  OverView" alt="image"/></Link>
 
   <div className='IconCard'>
-    <div><span className='iconsWishCard'><GiEternalLove /></span></div>
-    <div><span className='iconsWishCard'><FaEye /></span></div>
-    <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
+    <div> <Link to={'/shopWish'} className='link' > <span className='iconsWishCard'><GiEternalLove /></span></Link> </div>
+    <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishCard'><FaEye /></span></Link> </div>
+    <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishCard'><BsBarChartLineFill /></span></Link> </div>
   </div>
 
   <div class="card-body p-1">
@@ -443,11 +444,11 @@ const Home = () => {
 
   <SwiperSlide>
   <div class="card shadow-md">
-  <img src={BestPro2} class="card-img-top OverView " alt="..."/>
+  <Link to={'/shopD'}> <img src={BestPro2} class="card-img-top OverView " alt="image"/></Link>
   <div className='IconCard'>
-    <div><span className='iconsWishCard'><GiEternalLove /></span></div>
-    <div><span className='iconsWishCard'><FaEye /></span></div>
-    <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
+    <div> <Link to={'/shopWish'} className='link' > <span className='iconsWishCard'><GiEternalLove /></span></Link> </div>
+    <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishCard'><FaEye /></span></Link> </div>
+    <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishCard'><BsBarChartLineFill /></span></Link> </div>
   </div>
   <div class="card-body p-1">
   <h4 className='cardHEader m-0'>Herbal treatmen scal </h4>
@@ -458,11 +459,11 @@ const Home = () => {
 
 <SwiperSlide>
   <div class="card shadow-md">
-  <img src={BestPro3} class="card-img-top OverView" alt="..."/>
+ <Link to={'/shopD'}>  <img src={BestPro3} class="card-img-top OverView" alt="image"/></Link>
   <div className='IconCard'>
-    <div><span className='iconsWishCard'><GiEternalLove /></span></div>
-    <div><span className='iconsWishCard'><FaEye /></span></div>
-    <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
+    <div> <Link to={'/shopWish'} className='link' > <span className='iconsWishCard'><GiEternalLove /></span></Link> </div>
+    <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishCard'><FaEye /></span></Link> </div>
+    <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishCard'><BsBarChartLineFill /></span></Link> </div>
   </div>
   <div class="card-body p-1">
   <h4 className='cardHEader m-0'>Traveling Solo Is Awesome</h4>
@@ -474,11 +475,11 @@ const Home = () => {
   </SwiperSlide>
   <SwiperSlide>
   <div class="card shadow-md">
-  <img src={BestPro4} class="card-img-top OverView" alt="..."/>
+  <Link to={'/shopD'}> <img src={BestPro4} class="card-img-top OverView" alt="image"/></Link>
   <div className='IconCard'>
-    <div><span className='iconsWishCard'><GiEternalLove /></span></div>
-    <div><span className='iconsWishCard'><FaEye /></span></div>
-    <div><span className='iconsWishCard'><BsBarChartLineFill /></span></div>
+    <div> <Link to={'/shopWish'} className='link' > <span className='iconsWishCard'><GiEternalLove /></span></Link> </div>
+    <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWishCard'><FaEye /></span></Link> </div>
+    <div> <Link to={'/shopCom'} className='link' > <span className='iconsWishCard'><BsBarChartLineFill /></span></Link> </div>
   </div>
   <div class="card-body p-1">
   <h4 className='cardHEader m-0'>A Beautiful  Morning</h4>
