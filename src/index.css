@@ -359,6 +359,10 @@ width: 180px;
 height: 56px;
 text-decoration: none;
  }
+
+ .bnShopNow:hover{
+  background-color: #FF6F61;
+ }
  .BannerDamiText{
     padding-top: 130px;
  }

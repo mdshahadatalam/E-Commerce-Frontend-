@@ -1,9 +1,7 @@
 import React from 'react'
 import { RxCross2 } from "react-icons/rx";
-import colths from '../assets/images/Colths2/2Colths (1).jpg'
-import colths1 from '../assets/images/Colths2/2Colths (2).jpg'
-import colths2 from '../assets/images/Colths2/2Colths (3).jpg'
-import colths3 from '../assets/images/Colths2/2Colths (4).jpg' 
+
+import blank from '../assets/images/ShopD/blank.png'
 
 
 export const ShopWish = () => {
@@ -35,7 +33,7 @@ export const ShopWish = () => {
 
             <tr>
               <td> <span><RxCross2 /></span></td>
-              <td> <img className='img-fluid CardImg p-2' src={colths} alt="" /> <span>Jacket Hoodie Sweater</span> </td>
+              <td> <img className='img-fluid CardImg p-2' src={blank} alt="image" /> <span>Jacket Hoodie Sweater</span> </td>
               <td><p>$130.00</p></td>
               <td><p className='OrChild'>In Stock</p></td>
               <td>  
@@ -46,7 +44,7 @@ export const ShopWish = () => {
 
             <tr>
               <td> <span><RxCross2 /></span></td>
-              <td> <img className='img-fluid CardImg p-2' src={colths1} alt="" /> <span>Jacket Hoodie Sweater</span> </td>
+              <td> <img className='img-fluid CardImg p-2' src={blank} alt="image" /> <span>Jacket Hoodie Sweater</span> </td>
               <td><p>$130.00</p></td>
               <td><p className='OrChild'>In Stock</p></td>
               <td>  
@@ -55,7 +53,7 @@ export const ShopWish = () => {
             </tr>
             <tr>
               <td> <span><RxCross2 /></span></td>
-              <td> <img className='img-fluid CardImg p-2' src={colths2} alt="" /> <span>Jacket Hoodie Sweater</span> </td>
+              <td> <img className='img-fluid CardImg p-2' src={blank} alt="image" /> <span>Jacket Hoodie Sweater</span> </td>
               <td><p>$130.00</p></td>
               <td><p className='OrChild'>In Stock</p></td>
               <td>  
@@ -64,7 +62,7 @@ export const ShopWish = () => {
             </tr>
             <tr>
               <td> <span><RxCross2 /></span></td>
-              <td> <img className='img-fluid CardImg p-2' src={colths3} alt="" /> <span>Jacket Hoodie Sweater</span> </td>
+              <td> <img className='img-fluid CardImg p-2' src={blank} alt="image" /> <span>Jacket Hoodie Sweater</span> </td>
               <td><p>$130.00</p></td>
               <td><p className='OrChild'>In Stock</p></td>
               <td>  

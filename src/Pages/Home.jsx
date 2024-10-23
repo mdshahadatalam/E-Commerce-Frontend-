@@ -102,11 +102,11 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-center align-items-center">
           <div className="col-lg-5 ">
-            <img className='img-fluid' src={item1} alt="" />
-            <img className='pt-4 img-fluid' src={item3} alt="" />
+            <Link to={'/shopCard'}> <img className='img-fluid' src={item1} alt="image" /></Link>
+            <Link to={'/shopCard'}> <img className='pt-4 img-fluid' src={item3} alt="image" /></Link>
           </div>
           <div className="col-lg-7 d-flex justify-content-center">
-            <img  className='img-fluid pt-1' src={item2} alt="" />
+          <Link to={'/shopCard'}>   <img  className='img-fluid pt-1' src={item2} alt="image" /></Link>
           </div>
           </div>
         </div>
@@ -129,7 +129,6 @@ const Home = () => {
         <div className="row aroberaDirection ">
           <div className="col-lg-3 aroberaRes ">
             <Link to={'/shopD'} className='link'> <img className='img-fluid ProImg' src={product1} alt="image" /></Link>
-            <div data-coreui-toggle="rating" data-coreui-value="3"></div>
                <div className='IconPossi'>
                 <div> <Link to={'/shopWish'} className='link' > <span className='iconsWish'><GiEternalLove /></span></Link> </div>
                 <div> <Link to={'/shopCheck'} className='link' > <span className='iconsWish'><FaEye /></span></Link> </div>
@@ -201,7 +200,7 @@ const Home = () => {
 
               <p className='banner2Dami'>Holisticly maximize interoperable action items for effective <br/> e-business. Globally impact enterprise-wide niche markets <br/> through dynamic.</p>
    
-               <a className=' bnShopNow' href="">Shop Now</a>
+               <Link to={'/shopCard'}> <a className=' bnShopNow' href="">Shop Now</a></Link>
            </div>
           </div>
         </div>

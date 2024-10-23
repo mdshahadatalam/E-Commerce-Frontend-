@@ -19,6 +19,8 @@ import BestPro2 from '../assets/images/Carosel2/BestPro (2).jpg'
 import BestPro3 from '../assets/images/Carosel2/BestPro (3).jpg'
 import BestPro4 from '../assets/images/Carosel2/BestPro (4).jpg'
 
+import imgBlank from '../assets/images/About/imagesBank.png'
+
 
 import { GiEternalLove } from "react-icons/gi";
 import { FaEye } from "react-icons/fa";
@@ -178,7 +180,7 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={author} class="card-img-top OverView " alt="image"/>
+<img src={imgBlank} class="card-img-top OverView " alt="image"/>
        {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
@@ -206,7 +208,7 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={author} class="card-img-top OverView " alt="image"/>
+<img src={imgBlank} class="card-img-top OverView " alt="image"/>
        {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
@@ -232,7 +234,7 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={author} class="card-img-top OverView " alt="image"/>
+<img src={imgBlank} class="card-img-top OverView " alt="image"/>
        {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
          <div><span className='iconsWishCard'><FaEye /></span></div>
@@ -259,7 +261,7 @@ export const About = () => {
 
 <SwiperSlide>
   <div class="card shadow-md"> 
-<img src={author} class="card-img-top OverView " alt="image"/>
+<img src={imgBlank} class="card-img-top OverView " alt="image"/>
 
        {/* <div className='IconCard'>
          <div><span className='iconsWishCard'><GiEternalLove /></span></div>
