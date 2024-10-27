@@ -26,23 +26,27 @@ ul{
     right: 4px;
 }
 .search-foot{
-    position: absolute;
-    bottom: 0;
-    background-color:#fff;
-    box-shadow: 3px 3px 30px #ccc;
-    width: 100%;
+  display: none;
+}
 
+
+@media (max-width: 768px) {
+    .search-foot{
+        
+     display: block;
+     } 
 }
 .down-Search{
     background-color: #FF6F61;
     color: white;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     border-radius: 50%;
     transform: translateY(-50%);
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
+    cursor: pointer;
     
 }
 .navbar-toggler{
@@ -52,7 +56,7 @@ ul{
 
 .userIcon{
     background-color:whitesmoke;
-    box-shadow: 3px 3px 30px whitesmoke;
+    /* box-shadow: 3px 3px 30px whitesmoke; */
     width: 45px;
     height: 45px;
     border-radius: 50%;

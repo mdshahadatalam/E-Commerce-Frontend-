@@ -13,6 +13,8 @@ export const RootLayout = () => {
    <Navber/>
    <Outlet/>
    <Footer/>
+   <LastSec/>
+
     </>
   )
 }

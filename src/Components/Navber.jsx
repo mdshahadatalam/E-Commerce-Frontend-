@@ -114,28 +114,6 @@ export const Navber = () => {
 </nav>
 
 
-  {/* <section className='search-foot d-lg-none'>
-    <div className="container">
-      <div className="row">
-
-        <div className="col-2 mx-auto text-center">
-        <span className='userIcon' ><FaRegUser  /></span>
-        </div>
-
-        <div className="col-2 mx-auto text-center">
-        <span className='down-Search' onClick={ShowSearch}><IoSearchSharp /></span>
-        </div>
-
-        <div  className="col-2 mx-auto text-center" >
-        <div style={{position:'absolute'}}>
-        <span className='userIcon'><FaShoppingBag /></span>
-        <span className='downNu'>0</span>
-        </div>
-        </div>
-
-      </div>
-    </div>
-  </section> */}
 
 
 
@@ -151,42 +129,7 @@ export const Navber = () => {
   <div class="offcanvas-body">
     
     <div class="dropdown mt-3">
-      {/* <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Dropdown button
-      </button> */}
-      {/* <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-        <li className="nav-item py-1 px-3">
-          <a className="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item py-1 px-3">
-          <a className="nav-link" href="#">Shop</a>
-        </li>
-        <li className="nav-item py-1 px-3">
-          <a className="nav-link" href="#">Pages</a>
-        </li>
-        
-        <li className="nav-item dropdown py-1 px-3">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Features
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Features1</a></li>
-            <li><a className="dropdown-item" href="#">Features2</a></li>
-            <li><a className="dropdown-item" href="#">Features3</a></li>
-            <li><a className="dropdown-item" href="#">Features4</a></li>
-             </ul>
-        </li>
-
-        <li className="nav-item py-1 px-3">
-          <a className="nav-link" href="#">Blog</a>
-        </li>
-        <li className="nav-item py-1 px-3">
-          <a className="nav-link" href="#">Contact</a>
-        </li>
-        
-      </ul> */}
-
-
+      
 <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
 <NavLink to={'/'}  className={`${location.pathname == '/' ? "text-danger" : ""} edit`} >
@@ -255,6 +198,7 @@ export const Navber = () => {
     </div>
   </div>
 </div>
+
 
 
 <Search open= {show} cross={cross} />
