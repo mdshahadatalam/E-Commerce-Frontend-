@@ -29,7 +29,7 @@ export const Navber = () => {
   return (
     <>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container">
+     <div className="container">
     <a className="navbar-brand" href="#"><img src={logo} alt="" /></a>
     <button className="navbar-toggler" 
     type="button"
