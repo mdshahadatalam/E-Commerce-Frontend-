@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io"
@@ -11,7 +11,15 @@ import { FaInstagram } from "react-icons/fa";
 
 import blogs from '../assets/images/Blogs/blog (3).jpg'
 
+// Aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export const Contact = () => {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
   return (
   <>
   
@@ -19,8 +27,8 @@ export const Contact = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-               <h4 className='aboutUS'>Contact</h4>
-                <p className='Home-About'>Home  /  About Us</p>
+               <h4 data-aos="zoom-in" data-aos-duration="1500" className='aboutUS'>Contact</h4>
+                <p data-aos="zoom-in" data-aos-duration="1500" className='Home-About'>Home  /  About Us</p>
 
               </div>
             </div>
@@ -34,7 +42,7 @@ export const Contact = () => {
             <div className="row">
               <div className="col-lg-4">
 
-                <div className='shadow-lg bg-white rounded d-flex p-4 mt-2'>
+                <div data-aos="zoom-in" data-aos-duration="1500" className='shadow-lg bg-white rounded d-flex p-4 mt-2'>
                   <div> <span className='callIcon'><IoCall /></span></div>
 
                   <div>
@@ -51,7 +59,7 @@ export const Contact = () => {
 
               </div>
               <div className="col-lg-4">
-              <div className='shadow-lg bg-white rounded d-flex p-4 mt-2'>
+              <div data-aos="zoom-in" data-aos-duration="1500" className='shadow-lg bg-white rounded d-flex p-4 mt-2'>
                   <div> <span className='callIcon'><IoMdMail /></span></div>
 
                   <div>
@@ -68,7 +76,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="col-lg-4">
-              <div className='shadow-lg bg-white rounded d-flex p-4 mt-2'>
+              <div data-aos="zoom-in" data-aos-duration="1500" className='shadow-lg bg-white rounded d-flex p-4 mt-2'>
                   <div> <span className='callIcon'><MdOutlineFollowTheSigns /></span></div>
 
                   <div>

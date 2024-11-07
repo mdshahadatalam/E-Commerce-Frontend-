@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 import { GiEternalLove } from "react-icons/gi";
@@ -22,9 +22,17 @@ import colths11 from '../assets/images/Colths/colths (11).jpg'
 import colths12 from '../assets/images/Colths/colths (12).jpg'
 import { Link, useLocation } from 'react-router-dom';
 
+// Aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 export const ShopGride = () => {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
 
   const location = useLocation()
   return (
@@ -33,8 +41,8 @@ export const ShopGride = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <h4 className='aboutUS'>Shop-Gride</h4>
-           <p className='Home-About'>Home  /  About Us</p>
+            <h4 data-aos="zoom-in" data-aos-duration="1500" className='aboutUS'>Shop-Gride</h4>
+           <p  data-aos="zoom-in" data-aos-duration="1500" className='Home-About'>Home  /  About Us</p>
 
           </div>
         </div>

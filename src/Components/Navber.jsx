@@ -117,7 +117,7 @@ export const Navber = () => {
 
 
 
-
+{/* Offcanbase  */}
 
  
 
@@ -133,14 +133,14 @@ export const Navber = () => {
 <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
 <NavLink to={'/'}  className={`${location.pathname == '/' ? "text-danger" : ""} edit`} >
-<li className="nav-item">
+<li data-bs-dismiss="offcanvas"  className="nav-item">
     <a className="nav-link" href="#">Home</a>
   </li>
 </NavLink>
 
   
 <NavLink to={'/shopGride'}  className={`${location.pathname == '/shopGride' ? "text-danger" : ""} edit`} >
-      <li className="nav-item">
+      <li data-bs-dismiss="offcanvas"  className="nav-item">
           <a className="nav-link" href="#">Shop</a>
         </li>
       </NavLink>
@@ -149,20 +149,20 @@ export const Navber = () => {
     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       Pages
     </a>
-    <ul className="dropdown-menu">
+    <ul data-bs-dismiss="offcanvas"  className="dropdown-menu">
       <NavLink to={'/about'}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
      </ul>
   </li>
   
   <NavLink to={'/feature'}  className={`${location.pathname == '/feature' ? "text-danger" : ""} edit`} >
-      <li className="nav-item">
+      <li data-bs-dismiss="offcanvas"  className="nav-item">
           <a className="nav-link" href="#">Feature</a>
         </li>
       </NavLink>
 
 
   <NavLink to={'/blog'}  className={`${location.pathname == '/blog' ? "text-danger" : ""} edit`} >
-      <li className="nav-item">
+      <li data-bs-dismiss="offcanvas"  className="nav-item">
           <a className="nav-link" href="#">Blog</a>
         </li>
       </NavLink>
@@ -170,7 +170,7 @@ export const Navber = () => {
 
 
  <NavLink to={'/contact'}   className={`${location.pathname == '/contact' ? "text-danger" : ""} edit`}>
- <li className="nav-item">
+ <li data-bs-dismiss="offcanvas"  className="nav-item">
     <a className="nav-link" href="#">Contact</a>
   </li>
  </NavLink>
@@ -178,7 +178,7 @@ export const Navber = () => {
 </ul>
 
 <ul className='m-0 d-flex'>
-  <li>
+  <li data-bs-dismiss="offcanvas" >
       <a href="" onClick={ShowSearch}>
           <span className='icons'><IoMdSearch /></span>
       </a>

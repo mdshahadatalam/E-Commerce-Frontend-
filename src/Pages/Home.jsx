@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -36,9 +36,18 @@ import { FaEye } from "react-icons/fa";
 import { BsBarChartLineFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
+// Aos animation 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 const Home = () => {
+
+  useEffect( ()=>{
+    Aos.init();
+  })
+
 
   const [swiperRef, setSwiperRef] = useState(null);
   return (
@@ -102,11 +111,11 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-center align-items-center">
           <div className="col-lg-5 ">
-            <Link to={'/shopCard'}> <img className='img-fluid' src={item1} alt="image" /></Link>
-            <Link to={'/shopCard'}> <img className='pt-4 img-fluid' src={item3} alt="image" /></Link>
+            <Link to={'/shopCard'}> <img data-aos="zoom-in" data-aos-duration="1500" className='img-fluid' src={item1} alt="image" /></Link>
+            <Link to={'/shopCard'}> <img data-aos="zoom-in" data-aos-duration="1500" className='pt-4 img-fluid' src={item3} alt="image" /></Link>
           </div>
           <div className="col-lg-7 d-flex justify-content-center">
-          <Link to={'/shopCard'}>   <img  className='img-fluid pt-1' src={item2} alt="image" /></Link>
+          <Link to={'/shopCard'}>   <img  data-aos="zoom-in" data-aos-duration="1500" className='img-fluid pt-1' src={item2} alt="image" /></Link>
           </div>
           </div>
         </div>
@@ -194,13 +203,20 @@ const Home = () => {
         <div className="row">
           <div className="col-lg-12">
            <div className='BannerDamiText'>
-           <h3 className='bannerGet'>Get Up To 35% Off all   <br/>
+           <h3 data-aos="fade-down"
+               data-aos-easing="linear"
+               data-aos-duration="1500" 
+               className='bannerGet'>
+                Get Up To 35% Off all   <br/>
               Best Spa Cosmetics <br/>
               Cream</h3>
 
-              <p className='banner2Dami'>Holisticly maximize interoperable action items for effective <br/> e-business. Globally impact enterprise-wide niche markets <br/> through dynamic.</p>
+              <p
+               data-aos="zoom-in"
+               data-aos-duration="2000"
+                className='banner2Dami'>Holisticly maximize interoperable action items for effective <br/> e-business. Globally impact enterprise-wide niche markets <br/> through dynamic.</p>
    
-               <Link to={'/shopCard'}> <a className=' bnShopNow' href="">Shop Now</a></Link>
+               <Link to={'/shopCard'}> <a data-aos="zoom-in-up" data-aos-duration="1500"  className=' bnShopNow' href="">Shop Now</a></Link>
            </div>
           </div>
         </div>
@@ -500,7 +516,9 @@ const Home = () => {
 
 <section className='py-5'>
   <div className="container py-2 shadow-lg rounded-1">
-    <div className="row FreeShippingRes ">
+    <div data-aos="zoom-in"
+         data-aos-duration="2000"
+        className="row FreeShippingRes ">
       <div className="col-lg-3 FREEshIP py-2">
        <div className='d-flex align-items-center'>
         <div className='cercle'>  </div>
