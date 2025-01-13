@@ -23,9 +23,11 @@ import { useFormik } from 'formik';
 import values from './../../node_modules/lodash-es/values';
 import { signUp } from '../Validation/Validation';
 
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
 
 export const SignUp = () => {
-
+     const auth = getAuth();
      const [show,setShow] = useState(false)
 
    const handleClose =() =>{
@@ -58,7 +60,16 @@ export const SignUp = () => {
        })
 
        const createdNewUser =()=>{
-          console.log(formik.values);
+          // console.log(formik.values);
+          createUserWithEmailAndPassword(auth, formik.values.email, formik.values.password)
+  .then(() => {
+     console.log("sign up");
+     
+  })
+  .catch((error) => {
+    console.log(error);
+    
+  });
           
        }
 
@@ -189,6 +200,9 @@ export const SignUp = () => {
                             onChange={formik.handleChange}
                             value={formik.values.name}
                             />
+                            {
+                              formik.errors.name && formik.touched.name && <div className="text-red-500"> {formik.errors.name} </div>
+                            }
 
                          <input
                           className='SignUpInput my-2 mx-2'
@@ -200,6 +214,10 @@ export const SignUp = () => {
                             value={formik.values.phone}
                             />
 
+                            {
+                              formik.errors.phone && formik.touched.phone && <div className="text-red-500"> {formik.errors.phone} </div>
+                            }
+
                          <input
                           className='SignUpInput my-2 mx-2'
                            type="email" 
@@ -209,6 +227,9 @@ export const SignUp = () => {
                            onChange={formik.handleChange}
                            value={formik.values.email}
                            />
+                           {
+                              formik.errors.email && formik.touched.email && <div className="text-red-500"> {formik.errors.email} </div>
+                            }
 
                          <input 
                          className='SignUpInput my-2 mx-2'
@@ -220,13 +241,16 @@ export const SignUp = () => {
                            value={formik.values.password}
                            
                             />
+                            {
+                              formik.errors.password && formik.touched.password && <div className="text-red-500"> {formik.errors.password} </div>
+                            }
 
 
 
 
 
                            <div className='my-3'>
-                           <button  className='submit'>Submit</button>
+                           <button  type='submit' className='submit'>Submit</button>
                            </div>
                                </form>
                          
