@@ -19,6 +19,9 @@ import { Link } from 'react-router-dom';
 import { use } from 'react';
 
 import { RxCross2 } from "react-icons/rx";
+import { useFormik } from 'formik';
+import values from './../../node_modules/lodash-es/values';
+import { signUp } from '../Validation/Validation';
 
 
 export const SignUp = () => {
@@ -36,6 +39,32 @@ export const SignUp = () => {
      useEffect( ()=>{
          Aos.init();
        })
+
+       const initialValues ={
+          name:'',
+          phone:'',
+          email:'',
+          password:''
+       }
+       
+       const formik = useFormik({
+          initialValues,
+          onSubmit: (values,{resetForm}) => {
+               createdNewUser()
+               resetForm({values:''})
+          },
+          validationSchema:signUp
+
+       })
+
+       const createdNewUser =()=>{
+          console.log(formik.values);
+          
+       }
+
+
+
+
   return (
    <>
 
@@ -148,12 +177,17 @@ export const SignUp = () => {
                         </div>
                     <div className='text-center'>
                                <h4 className='signUp'>Sign up new journey</h4>
-                         <input
+
+
+                               <form onSubmit={formik.handleSubmit} action="">
+                               <input
                           className='SignUpInput my-2 mx-2'
                            type="text"
                             placeholder='Your full name' 
-                            id='full name'
-                            name='full name'
+                            id='name'
+                            name='name'
+                            onChange={formik.handleChange}
+                            value={formik.values.name}
                             />
 
                          <input
@@ -162,6 +196,8 @@ export const SignUp = () => {
                             placeholder='Your phone' 
                             id='phone'
                             name='phone'
+                            onChange={formik.handleChange}
+                            value={formik.values.phone}
                             />
 
                          <input
@@ -170,6 +206,8 @@ export const SignUp = () => {
                            placeholder=' Your email' 
                            id='email'
                            name='email'
+                           onChange={formik.handleChange}
+                           value={formik.values.email}
                            />
 
                          <input 
@@ -178,12 +216,23 @@ export const SignUp = () => {
                            placeholder='New password'
                            id='password'
                            name='password'
+                           onChange={formik.handleChange}
+                           value={formik.values.password}
+                           
                             />
 
- 
+
+
+
+
                            <div className='my-3'>
-                           <button className='submit'>Submit</button>
+                           <button  className='submit'>Submit</button>
                            </div>
+                               </form>
+                         
+
+ 
+                           
                     </div>
                      <p className='have'>Have a account? Sign In</p>
                </div>
