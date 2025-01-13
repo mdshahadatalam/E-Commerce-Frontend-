@@ -19,6 +19,7 @@ import { BlogD } from './Pages/BlogD';
 import { ShopGride2 } from './Pages/ShopGride2';
 import { Blogs } from './Pages/Blogs';
 import { Features } from './Pages/Features';
+import { SignUp } from './Pages/SignUp';
 
 
 
@@ -57,6 +58,9 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
          </Route>
+
+            {/* security  */}
+            <Route path="/signUp" element={<SignUp />} />
 
       </Route>
     )
