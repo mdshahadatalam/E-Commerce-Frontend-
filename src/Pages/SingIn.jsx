@@ -16,17 +16,15 @@ import item1 from '../assets/images/Items/Item 1.png'
 import item2 from '../assets/images/Items/Item 2.png'
 import item3 from '../assets/images/Items/Item 3.png'
 import { Link } from 'react-router-dom';
-import { use } from 'react';
 
 import { RxCross2 } from "react-icons/rx";
 import { useFormik } from 'formik';
-import values from './../../node_modules/lodash-es/values';
-import { signUp } from '../Validation/Validation';
+import { signIn, signUp } from '../Validation/Validation';
 
 import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword  } from "firebase/auth";
 
 
 
@@ -64,24 +62,24 @@ export const SignIn = () => {
        const formik = useFormik({
           initialValues,
           onSubmit: (values,{resetForm}) => {
-               createdNewUser()
+            signInUser()
                resetForm({values:''})
           },
-          validationSchema:signUp
+          validationSchema:signIn
 
        })
 
-       const createdNewUser =()=>{
+       const signInUser =()=>{
           // console.log(formik.values);
-          createUserWithEmailAndPassword(auth, formik.values.email, formik.values.password)
-  .then(() => {
-     console.log("sign up");
-     
-  })
-  .catch((error) => {
-    console.log(error);
-    
-  });
+          signInWithEmailAndPassword(auth,formik.values.email, formik.values.password)
+          .then(() => {
+            console.log("signIn");
+            
+          })
+          .catch((error) => {
+            console.log(error);
+            
+          });
           
        }
 
@@ -199,7 +197,7 @@ export const SignIn = () => {
                             <span onClick={handleClose} className='iconsCross'><RxCross2 /></span>
                         </div>
                     <div className='text-center'>
-                               <h4 className='signUp'>Sign up new journey</h4>
+                               <h4 className='signUp'>Sign In new journey</h4>
 
 
                     <form onSubmit={formik.handleSubmit} action="">

@@ -27,6 +27,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 
 import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "firebase/auth";
+import { toast, ToastContainer } from 'react-toastify';
 
 
 
@@ -34,7 +35,7 @@ export const SignUp = () => {
      const auth = getAuth();
      const [show,setShow] = useState(false)
      const [showPassword, setShowPassword] = useState(false);
-    //  const navigate = useNavigate()
+     const navigate = useNavigate()
    const handleClose =() =>{
      setShow(false)
    }
@@ -78,10 +79,38 @@ export const SignUp = () => {
   .then(() => {
      console.log("sign up");
      sendEmailVerification(auth.currentUser)
+       
+     setTimeout(()=>{
+      navigate('/signIn')
+     },2000)
+
+
+     toast.success('Email verification send', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      // transition: Bounce,
+      });
      
   })
   .catch((error) => {
     console.log(error);
+    toast.error('Please try again', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+      });
     
   });
           
@@ -290,7 +319,7 @@ export const SignUp = () => {
   }
 
 
-
+<ToastContainer />
 
    </>
   )
