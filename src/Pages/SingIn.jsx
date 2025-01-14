@@ -277,7 +277,7 @@ export const SignIn = () => {
                             <span onClick={handleClose} className='iconsCross'><RxCross2 /></span>
                         </div>
                     <div className='text-center'>
-                               <h4 className='signUp'>Sign In new journey</h4>
+                               <h4 className='signUp'>Sign in new journey</h4>
 
 
                     <form onSubmit={formik.handleSubmit} action="">
@@ -338,7 +338,7 @@ export const SignIn = () => {
  
                            
                     </div>
-                     <p className='have m-0'>Have a account? <Link className='PageLink' to={'/signUp'}>Sign up</Link> </p>
+                     <p className='have m-0'>Don't have a account? <Link className='PageLink' to={'/signUp'}>Sign up</Link> </p>
                </div>
                <div className="col-lg-2"></div>
                 
