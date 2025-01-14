@@ -28,6 +28,7 @@ import { getAuth, signInWithEmailAndPassword  } from "firebase/auth";
 import { toast, ToastContainer } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { loggedInUser } from '../Feuature/Slice/LoginSlice';
+import { PulseLoader } from 'react-spinners';
 
 
 
@@ -37,6 +38,7 @@ export const SignIn = () => {
      const [showPassword, setShowPassword] = useState(false);
      const navigate = useNavigate()
      const dispatch = useDispatch()
+     const [loader,setLoader] = useState(false)
    const handleClose =() =>{
      setShow(false)
    }
@@ -76,9 +78,11 @@ export const SignIn = () => {
 
        const signInUser =()=>{
           // console.log(formik.values);
+          setLoader(true)
           signInWithEmailAndPassword(auth,formik.values.email, formik.values.password)
           .then((user) => {
             console.log("signIn");
+            setLoader(false)
 
             if(user.user.emailVerified == true){
               dispatch(loggedInUser(user))
@@ -112,6 +116,7 @@ export const SignIn = () => {
             
           })
           .catch((error) => {
+            setLoader(false)
             console.log(error);
             if(error.message.includes('auth/invalid-credential')){
               toast.error('Email or Password Incorrect', {
@@ -320,7 +325,12 @@ export const SignIn = () => {
 
 
                            <div className='my-2'>
-                           <button  type='submit' className='submit shadow-lg'>Submit</button>
+                           <button  type='submit' className='submit shadow-lg'>
+                            {
+                              loader?<PulseLoader size={5} color='white' />: " Submit"
+                            }
+                           
+                            </button>
                            </div>
                                </form>
                          

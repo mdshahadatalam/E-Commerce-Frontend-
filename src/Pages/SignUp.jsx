@@ -28,6 +28,7 @@ import { IoEyeOffOutline } from "react-icons/io5";
 
 import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "firebase/auth";
 import { toast, ToastContainer } from 'react-toastify';
+import { PulseLoader } from 'react-spinners';
 
 
 
@@ -36,6 +37,7 @@ export const SignUp = () => {
      const [show,setShow] = useState(true)
      const [showPassword, setShowPassword] = useState(false);
      const navigate = useNavigate()
+     const [loader,setLoader] = useState(false)
    const handleClose =() =>{
      setShow(false)
    }
@@ -75,9 +77,11 @@ export const SignUp = () => {
 
        const createdNewUser =()=>{
           // console.log(formik.values);
+          setLoader(true)
           createUserWithEmailAndPassword(auth, formik.values.email, formik.values.password)
   .then(() => {
      console.log("sign up");
+     setLoader(false)
      sendEmailVerification(auth.currentUser)
        
      setTimeout(()=>{
@@ -100,6 +104,7 @@ export const SignUp = () => {
   })
   .catch((error) => {
     console.log(error);
+    setLoader(false)
     toast.error('Please try again', {
       position: "top-right",
       autoClose: 5000,
@@ -302,7 +307,12 @@ export const SignUp = () => {
 
 
                            <div className='my-3'>
-                           <button  type='submit' className='submit'>Submit</button>
+                           <button  type='submit' className='submit'>
+                            {
+                              loader? <PulseLoader size={5} color='white' />: "Submit"
+                            }
+                          
+                            </button>
                            </div>
                                </form>
                          

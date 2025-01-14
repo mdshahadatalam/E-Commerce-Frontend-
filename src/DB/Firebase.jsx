@@ -9,8 +9,8 @@ const firebaseConfig = {
   authDomain: "aytor-c6ab9.firebaseapp.com",
   projectId: "aytor-c6ab9",
   storageBucket: "aytor-c6ab9.firebasestorage.app",
-  messagingSenderId: "733189113321",
-  appId: "1:733189113321:web:2acd9e5cd169d09618f778"
+  messagingSenderId: "process.env.REACT_APP_USERID",
+  appId: "process.env.REACT_APP_APPLIED"
 };
 
 // Initialize Firebase
