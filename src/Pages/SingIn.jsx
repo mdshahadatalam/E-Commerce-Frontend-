@@ -15,7 +15,7 @@ import product4 from '../assets/images/arobelaPro/product 4.png'
 import item1 from '../assets/images/Items/Item 1.png'
 import item2 from '../assets/images/Items/Item 2.png'
 import item3 from '../assets/images/Items/Item 3.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { RxCross2 } from "react-icons/rx";
 import { useFormik } from 'formik';
@@ -25,6 +25,9 @@ import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 
 import { getAuth, signInWithEmailAndPassword  } from "firebase/auth";
+import { toast, ToastContainer } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { loggedInUser } from '../Feuature/Slice/LoginSlice';
 
 
 
@@ -32,6 +35,8 @@ export const SignIn = () => {
      const auth = getAuth();
      const [show,setShow] = useState(false)
      const [showPassword, setShowPassword] = useState(false);
+     const navigate = useNavigate()
+     const dispatch = useDispatch()
    const handleClose =() =>{
      setShow(false)
    }
@@ -72,12 +77,55 @@ export const SignIn = () => {
        const signInUser =()=>{
           // console.log(formik.values);
           signInWithEmailAndPassword(auth,formik.values.email, formik.values.password)
-          .then(() => {
+          .then((user) => {
             console.log("signIn");
+
+            if(user.user.emailVerified == true){
+              dispatch(loggedInUser(user))
+              localStorage.setItem("user",JSON.stringify(user))
+              navigate('/')
+
+               toast.success('welcome🥰', {
+                     position: "top-right",
+                     autoClose: 5000,
+                     hideProgressBar: false,
+                     closeOnClick: false,
+                     pauseOnHover: true,
+                     draggable: true,
+                     progress: undefined,
+                     theme: "light",
+                     // transition: Bounce,
+                     });
+            }else{
+               toast.error('Your email is not verified', {
+                      position: "top-right",
+                      autoClose: 5000,
+                      hideProgressBar: false,
+                      closeOnClick: false,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "light",
+                      // transition: Bounce,
+                      });
+            }
             
           })
           .catch((error) => {
             console.log(error);
+            if(error.message.includes('auth/invalid-credential')){
+              toast.error('Email or Password Incorrect', {
+                 position: "top-right",
+                 autoClose: 1000,
+                 hideProgressBar: true,
+                 closeOnClick: true,
+                 pauseOnHover: true,
+                 draggable: true,
+                 progress: undefined,
+                 theme: "light",
+                 
+                 });
+                }
             
           });
           
@@ -245,7 +293,7 @@ export const SignIn = () => {
 
 
                            <div className='my-2'>
-                           <button  type='submit' className='submit'>Submit</button>
+                           <button  type='submit' className='submit shadow-lg'>Submit</button>
                            </div>
                                </form>
                          
@@ -253,7 +301,7 @@ export const SignIn = () => {
  
                            
                     </div>
-                     <p className='have m-0'>Have a account? Sign In</p>
+                     <p className='have m-0'>Have a account? <Link className='PageLink' to={'/signUp'}>Sign up</Link> </p>
                </div>
                <div className="col-lg-2"></div>
                 
@@ -263,7 +311,7 @@ export const SignIn = () => {
   }
 
 
-
+<ToastContainer />
 
    </>
   )

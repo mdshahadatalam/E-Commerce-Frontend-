@@ -1823,3 +1823,13 @@ border: none;
   word-spacing: 1px;
 }
 
+
+.PageLink{
+  color: black;
+  text-decoration: none;
+}
+
+.PageLink:hover{
+  color: blue;
+  text-decoration: underline;
+}
