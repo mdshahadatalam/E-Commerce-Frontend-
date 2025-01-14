@@ -8,13 +8,20 @@ import { FaShoppingBag } from "react-icons/fa";
 import { Search } from './Search';
 import { IoSearchSharp } from "react-icons/io5";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { IoMdLogOut } from "react-icons/io";
+import { getAuth, signOut } from "firebase/auth";
+import { toast, ToastContainer } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { loggedInUser } from '../Feuature/Slice/LoginSlice';
 
 export const Navber = () => {
 
     const [ show,SetShow] = useState(false)
-    
+    const auth = getAuth();
     const location = useLocation()
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
     // console.log(location.pathname);
     
 
@@ -26,6 +33,44 @@ export const Navber = () => {
     const cross = ()=>{
       SetShow(false)
     }
+  
+    const handleLogOut =(e)=>{
+      e.preventDefault()
+      signOut(auth).then(() => {
+        setTimeout(()=>{
+          navigate('/signIn')
+          dispatch(loggedInUser())
+         localStorage.removeItem('user')
+      },2000)
+
+         toast.success('Successfully log out', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          // transition: Bounce,
+           });
+      }).catch((error) => {
+        // An error happened.
+         toast.error('Try again', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          // transition: Bounce,
+          });
+      });
+    }
+
+
   return (
     <>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -93,11 +138,11 @@ export const Navber = () => {
       <ul className='m-0 d-flex'>
         <li>
             <a href="" onClick={ShowSearch}>
-                <span className='icons'><IoMdSearch /></span>
+                <span title='Search' className='icons'><IoMdSearch /></span>
             </a>
         </li>
-        <li><a href=""><span className='icons'><FaRegUser /></span></a></li>
-        <li><a href=""><span className='icons'><GiSelfLove /></span></a></li>
+        <li><a href=""><span onClick={handleLogOut} title='LogOut' className='icons'><IoMdLogOut /></span></a></li>
+        <li><a href=""><span title='Wish' className='icons'><GiSelfLove /></span></a></li>
       
       
            <li className='last'>
@@ -202,6 +247,8 @@ export const Navber = () => {
 
 
 <Search open= {show} cross={cross} />
+
+<ToastContainer />
     </>
   )
 }
