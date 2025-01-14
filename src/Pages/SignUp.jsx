@@ -15,7 +15,7 @@ import product4 from '../assets/images/arobelaPro/product 4.png'
 import item1 from '../assets/images/Items/Item 1.png'
 import item2 from '../assets/images/Items/Item 2.png'
 import item3 from '../assets/images/Items/Item 3.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { use } from 'react';
 
 import { RxCross2 } from "react-icons/rx";
@@ -23,13 +23,18 @@ import { useFormik } from 'formik';
 import values from './../../node_modules/lodash-es/values';
 import { signUp } from '../Validation/Validation';
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { IoEyeOutline } from "react-icons/io5";
+import { IoEyeOffOutline } from "react-icons/io5";
+
+import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "firebase/auth";
+
 
 
 export const SignUp = () => {
      const auth = getAuth();
      const [show,setShow] = useState(false)
-
+     const [showPassword, setShowPassword] = useState(false);
+    //  const navigate = useNavigate()
    const handleClose =() =>{
      setShow(false)
    }
@@ -40,7 +45,15 @@ export const SignUp = () => {
 
      useEffect( ()=>{
          Aos.init();
-       })
+       })   
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
+  };
+
+
+
+
 
        const initialValues ={
           name:'',
@@ -64,6 +77,7 @@ export const SignUp = () => {
           createUserWithEmailAndPassword(auth, formik.values.email, formik.values.password)
   .then(() => {
      console.log("sign up");
+     sendEmailVerification(auth.currentUser)
      
   })
   .catch((error) => {
@@ -233,7 +247,7 @@ export const SignUp = () => {
 
                          <input 
                          className='SignUpInput my-2 mx-2'
-                          type="password"
+                          type={showPassword ? "text" : "password"}
                            placeholder='New password'
                            id='password'
                            name='password'
@@ -244,7 +258,15 @@ export const SignUp = () => {
                             {
                               formik.errors.password && formik.touched.password && <div className="text-red-500"> {formik.errors.password} </div>
                             }
-
+                            
+                            <div>
+                               <button
+                               className="Icon"
+                               type="button"
+                               onClick={togglePasswordVisibility} >
+                               {showPassword ? <IoEyeOffOutline /> : <IoEyeOutline />}
+                               </button>
+                            </div>
 
 
 

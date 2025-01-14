@@ -20,6 +20,7 @@ import { ShopGride2 } from './Pages/ShopGride2';
 import { Blogs } from './Pages/Blogs';
 import { Features } from './Pages/Features';
 import { SignUp } from './Pages/SignUp';
+import { SignIn } from './Pages/SingIn';
 
 
 
@@ -61,6 +62,7 @@ function App() {
 
             {/* security  */}
             <Route path="/signUp" element={<SignUp />} />
+            <Route path="/signIn" element={<SignIn />} />
 
       </Route>
     )

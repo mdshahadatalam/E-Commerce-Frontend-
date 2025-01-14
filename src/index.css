@@ -1785,4 +1785,41 @@ border: none;
   top: 10px;
   font-size: 20px;
   cursor: pointer;
+  transform: rotate(180deg);
+  transition: 0.3s;
 }
+
+.iconsCross:hover{
+  transform: rotate(360deg);
+}
+
+.Icon{
+  box-shadow: none;
+  border: none;
+  background-color: whitesmoke;
+  font-size: 20px;
+  outline: none;
+  margin-top: 3px;
+}
+
+
+
+
+
+.SignInInput{
+  width: 60%;
+  height: 43px;
+  outline: none;
+  background-color: #1e1b1b;
+  color: whitesmoke;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.SignInInput::placeholder{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
