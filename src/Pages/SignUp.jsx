@@ -33,7 +33,7 @@ import { toast, ToastContainer } from 'react-toastify';
 
 export const SignUp = () => {
      const auth = getAuth();
-     const [show,setShow] = useState(false)
+     const [show,setShow] = useState(true)
      const [showPassword, setShowPassword] = useState(false);
      const navigate = useNavigate()
    const handleClose =() =>{
@@ -128,6 +128,7 @@ export const SignUp = () => {
 
 
  {/* beuati section  */}
+ 
 
  <section className='py-5'>
          <div className="container">
@@ -309,7 +310,7 @@ export const SignUp = () => {
  
                            
                     </div>
-                     <p className='have'>Have a account? Sign In</p>
+                     <p className='have'>Have a account? <Link className='PageLink'  to={'/SignIn'}>Sign In</Link></p>
                </div>
                <div className="col-lg-2"></div>
                 

@@ -21,6 +21,8 @@ import { Blogs } from './Pages/Blogs';
 import { Features } from './Pages/Features';
 import { SignUp } from './Pages/SignUp';
 import { SignIn } from './Pages/SingIn';
+import LoginInUserRoute from './PrivateRoute/LoginInUserRoute';
+import LogOutUserRoute from './PrivateRoute/LogOutUserRoute';
 
 
 
@@ -30,7 +32,14 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-         <Route element={<RootLayout/>}>  
+         
+
+            {/* security  */}
+        
+
+
+            <Route element={<LoginInUserRoute/>}>
+            <Route element={<RootLayout/>}>  
          {/* Home  */}
         <Route path="/" element={<Home />} />
   
@@ -59,10 +68,12 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
          </Route>
+            </Route>
 
-            {/* security  */}
+            <Route element={<LogOutUserRoute/>}>
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/signIn" element={<SignIn />} />
+            </Route>
 
       </Route>
     )
