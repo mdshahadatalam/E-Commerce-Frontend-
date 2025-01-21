@@ -8,15 +8,17 @@ import { MdOutlineFollowTheSigns } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
+import axios from 'axios'
 import blogs from '../assets/images/Blogs/blog (3).jpg'
-
+import SyncLoader from "react-spinners/ClipLoader";
 // Aos animation 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { toast, ToastContainer } from 'react-toastify';
 
 export const Contact = () => {
 
+  const [loader,setLoader] = useState(false)
   const [name,setName] = useState("")
   const [email,setEmail] = useState("")
   const [phone,setPhone] = useState("")
@@ -43,7 +45,42 @@ export const Contact = () => {
    }
 
    const handleSubmit =()=>{
-    console.log(name,email,phone,title,message);
+    // console.log(name,email,phone,title,message);
+    setLoader(true)
+    axios.post('http://localhost:3000/sendEmail',{name,email,phone,title,message}).then(res=>{
+      console.log(res);
+      setLoader(false)
+      setName('')
+      setEmail('')
+      setPhone('')
+      setTitle('')
+      setMessage('')
+      toast.success('Successfully send', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        // transition: Bounce,
+        });
+    }).catch(err=>{
+      setLoader(false)
+      console.log(err);
+      toast.error('Pleas try again', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        // transition: Bounce,
+        });
+    })
     
    }
 
@@ -150,6 +187,7 @@ export const Contact = () => {
                       id='name'
                       name='name'
                       onChange={handleName}
+                      value={name}
                       />
 
                     <input
@@ -159,6 +197,7 @@ export const Contact = () => {
                        id='email'
                        name='email'
                        onChange={handleEmail}
+                       value={email}
                         />
 
                     <input
@@ -168,6 +207,7 @@ export const Contact = () => {
                       id='number'
                       name='number'
                       onChange={handleNumber}
+                      value={phone}
                        />
 
                     <input
@@ -177,6 +217,7 @@ export const Contact = () => {
                       id='title'
                       name='title'
                       onChange={handleTitle}
+                      value={title}
                       />
 
                     <textarea 
@@ -185,12 +226,16 @@ export const Contact = () => {
                        id="message" 
                       placeholder='Message*'
                       onChange={handleMessage}
+                      value={message}
                       ></textarea>
 
 
 
                     <div className='text-center'>
-                      <button onClick={handleSubmit} className='contBtn'>Send Massage</button>
+                      <button onClick={handleSubmit} className='contBtn'>
+                         {
+                          loader? <SyncLoader  size={5} color='white'/>:"Send Massage"
+                         }</button>
                     </div>
                 </div>
               </div>
@@ -201,7 +246,7 @@ export const Contact = () => {
           </div>
         </section>
 
-        
+        <ToastContainer />
   </>
   )
 }
