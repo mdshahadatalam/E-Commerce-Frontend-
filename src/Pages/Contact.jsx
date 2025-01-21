@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io"
@@ -16,6 +16,36 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 export const Contact = () => {
+
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [phone,setPhone] = useState("")
+  const [title,setTitle] = useState("")
+  const [message,setMessage] = useState("")
+
+  const handleName =(e)=>{
+    setName(e.target.value)
+  }
+
+  const handleEmail =(e)=>{
+    setEmail(e.target.value)
+  }
+  const handleNumber =(e)=>{
+    setPhone(e.target.value)
+  }
+  
+   const handleTitle =(e)=>{
+    setTitle(e.target.value)
+   }
+
+   const handleMessage =(e)=>{
+    setMessage(e.target.value)
+   }
+
+   const handleSubmit =()=>{
+    console.log(name,email,phone,title,message);
+    
+   }
 
   useEffect( ()=>{
     Aos.init();
@@ -112,19 +142,56 @@ export const Contact = () => {
               <div className="col-lg-6 p-0">
                 <div className='shadow-lg bg-white rounded p-3'>
                   <h4 className='getIn'>Get in touch</h4>
-                  <form action="">
-                    <input className='conInpt' type="text" placeholder='Your name*' />
-                    <input className='conInpt' type="email" placeholder='Your email*' />
-                    <input className='conInpt' type="number" placeholder='Your number*' />
-                    <input className='conInpt' type="text" placeholder='Your title*' />
-                    <textarea  className='conTnMes'  name="" id="" placeholder='Message*'></textarea>
+
+                    <input
+                     className='conInpt'
+                      type="text"
+                      placeholder='Your name*' 
+                      id='name'
+                      name='name'
+                      onChange={handleName}
+                      />
+
+                    <input
+                     className='conInpt'
+                      type="email"
+                       placeholder='Your email*'
+                       id='email'
+                       name='email'
+                       onChange={handleEmail}
+                        />
+
+                    <input
+                     className='conInpt'
+                      type="number" 
+                      placeholder='Your number*'
+                      id='number'
+                      name='number'
+                      onChange={handleNumber}
+                       />
+
+                    <input
+                     className='conInpt'
+                      type="text" 
+                      laceholder='Your title*' 
+                      id='title'
+                      name='title'
+                      onChange={handleTitle}
+                      />
+
+                    <textarea 
+                     className='conTnMes' 
+                      name="message"
+                       id="message" 
+                      placeholder='Message*'
+                      onChange={handleMessage}
+                      ></textarea>
+
 
 
                     <div className='text-center'>
-                      <button className='contBtn'>Send Massage</button>
+                      <button onClick={handleSubmit} className='contBtn'>Send Massage</button>
                     </div>
-
-                  </form>
                 </div>
               </div>
               <div className="col-lg-6 p-0">
