@@ -23,6 +23,7 @@ import { SignUp } from './Pages/SignUp';
 import { SignIn } from './Pages/SingIn';
 import LoginInUserRoute from './PrivateRoute/LoginInUserRoute';
 import LogOutUserRoute from './PrivateRoute/LogOutUserRoute';
+import { Forget } from './Components/forget';
 
 
 
@@ -73,6 +74,7 @@ function App() {
             <Route element={<LogOutUserRoute/>}>
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/signIn" element={<SignIn />} />
+            <Route path="/forget" element={<Forget />} />
             </Route>
 
       </Route>
