@@ -23,7 +23,7 @@ import { SignUp } from './Pages/SignUp';
 import { SignIn } from './Pages/SingIn';
 import LoginInUserRoute from './PrivateRoute/LoginInUserRoute';
 import LogOutUserRoute from './PrivateRoute/LogOutUserRoute';
-import { Forget } from './Components/forget';
+import { Forget } from './Components/Forget';
 
 
 
