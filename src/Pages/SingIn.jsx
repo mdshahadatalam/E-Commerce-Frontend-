@@ -147,30 +147,7 @@ export const SignIn = () => {
 
 
 
-   <section className='banner2'>
-         <div className="container">
-           <div className="row">
-             <div className="col-lg-12">
-              <div className='BannerDamiText'>
-              <h3 data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500" 
-                  className='bannerGet'>
-                   Get Up To 35% Off all   <br/>
-                 Best Spa Cosmetics <br/>
-                 Cream</h3>
    
-                 <p
-                  data-aos="zoom-in"
-                  data-aos-duration="2000"
-                   className='banner2Dami'>Holisticly maximize interoperable action items for effective <br/> e-business. Globally impact enterprise-wide niche markets <br/> through dynamic.</p>
-      
-                  <Link  onClick={handleShow} to={'/'}> <a data-aos="zoom-in-up" data-aos-duration="1500"  className=' bnShopNow' href="">Shop Now</a></Link>
-              </div>
-             </div>
-           </div>
-         </div>
-       </section>
 
 
  {/* beuati section  */}
