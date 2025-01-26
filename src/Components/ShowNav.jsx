@@ -141,36 +141,36 @@ export const ShowNav = ({setShow}) => {
 <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
 <NavLink to={''}  className={`${location.pathname == '/' ? "text-danger" : ""} edit`} >
-<li data-bs-dismiss="offcanvas"  className="nav-item">
+<li onClick={handleShow} data-bs-dismiss="offcanvas"  className="nav-item">
     <a className="nav-link" href="#">Home</a>
   </li>
 </NavLink>
 
   
 <NavLink to={''}  className={`${location.pathname == '/shopGride' ? "text-danger" : ""} edit`} >
-      <li data-bs-dismiss="offcanvas"  className="nav-item">
+      <li onClick={handleShow} data-bs-dismiss="offcanvas"  className="nav-item">
           <a className="nav-link" href="#">Shop</a>
         </li>
       </NavLink>
 
-  <li className="nav-item dropdown">
+  <li onClick={handleShow} data-bs-dismiss="offcanvas" className="nav-item dropdown">
     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       Pages
     </a>
     <ul data-bs-dismiss="offcanvas"  className="dropdown-menu">
-      <NavLink to={'/about'}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
+      <NavLink to={''}  className={'edit'} > <li><a className="dropdown-item" href="#">About Us</a></li></NavLink>
      </ul>
   </li>
   
   <NavLink to={''}  className={`${location.pathname == '/feature' ? "text-danger" : ""} edit`} >
-      <li data-bs-dismiss="offcanvas"  className="nav-item">
+      <li onClick={handleShow} data-bs-dismiss="offcanvas"  className="nav-item">
           <a className="nav-link" href="#">Feature</a>
         </li>
       </NavLink>
 
 
   <NavLink to={''}  className={`${location.pathname == '/blog' ? "text-danger" : ""} edit`} >
-      <li data-bs-dismiss="offcanvas"  className="nav-item">
+      <li onClick={handleShow} data-bs-dismiss="offcanvas"  className="nav-item">
           <a className="nav-link" href="#">Blog</a>
         </li>
       </NavLink>
@@ -178,7 +178,7 @@ export const ShowNav = ({setShow}) => {
 
 
  <NavLink to={''}   className={`${location.pathname == '/contact' ? "text-danger" : ""} edit`}>
- <li data-bs-dismiss="offcanvas"  className="nav-item">
+ <li onClick={handleShow} data-bs-dismiss="offcanvas"  className="nav-item">
     <a className="nav-link" href="#">Contact</a>
   </li>
  </NavLink>
@@ -191,7 +191,7 @@ export const ShowNav = ({setShow}) => {
           <span className='icons'><IoMdSearch /></span>
       </a>
   </li>
-  <li><a href=""><span className='icons'><FaRegUser /></span></a></li>
+  <li data-bs-dismiss="offcanvas" ><a href=""><span onClick={handleShow} className='icons'><FaRegUser /></span></a></li>
   <li><a href=""><span className='icons'><GiSelfLove /></span></a></li>
 
 
