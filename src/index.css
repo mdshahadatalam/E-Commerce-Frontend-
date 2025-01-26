@@ -1710,7 +1710,7 @@ border: none;
   height: 100vh;
   position: fixed;
   top: 0;
-  opacity: 70%;
+  opacity: 95%;
 }
 
 .SignUpInput{
@@ -1832,4 +1832,9 @@ border: none;
 .PageLink:hover{
   color: blue;
   text-decoration: underline;
+}
+
+.google{
+  cursor: pointer;
+  padding: 10px 0;
 }

@@ -29,6 +29,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { loggedInUser } from '../Feuature/Slice/LoginSlice';
 import { PulseLoader } from 'react-spinners';
+import { Google } from '../Components/Google';
 
 
 
@@ -317,6 +318,8 @@ export const SignIn = () => {
                     </div>
                        <p className='have m-0 py-1'> <Link className='PageLink' to={'/forget'}>Forget password?</Link> </p>
                      <p className='have m-0'>Don't have a account? <Link className='PageLink' to={'/signUp'}>Sign up</Link> </p>
+
+                      <Google/>
                </div>
                <div className="col-lg-2"></div>
                 
