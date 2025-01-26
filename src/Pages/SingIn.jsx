@@ -262,7 +262,7 @@ export const SignIn = () => {
                              
 
                          <input
-                          className='SignInInput my-2 mx-2'
+                          className='SignInInput my-2'
                            type="email" 
                            placeholder=' Your email' 
                            id='email'
@@ -277,7 +277,7 @@ export const SignIn = () => {
                             <br />
 
                          <input 
-                         className='SignInInput my-2 mx-2'
+                         className='SignInInput my-2'
                           type={showPassword ? "text" : "password"}
                            placeholder='New password'
                            id='password'

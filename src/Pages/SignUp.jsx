@@ -29,6 +29,7 @@ import { IoEyeOffOutline } from "react-icons/io5";
 import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "firebase/auth";
 import { toast, ToastContainer } from 'react-toastify';
 import { PulseLoader } from 'react-spinners';
+import { Google } from '../Components/Google';
 
 
 
@@ -321,6 +322,8 @@ export const SignUp = () => {
                            
                     </div>
                      <p className='have'>Have a account? <Link className='PageLink'  to={'/SignIn'}>Sign In</Link></p>
+
+                     <Google/>
                </div>
                <div className="col-lg-2"></div>
                 

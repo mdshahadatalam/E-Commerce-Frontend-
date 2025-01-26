@@ -5,6 +5,7 @@ import { initializeApp } from 'firebase/app';
 import firebaseConfig from './../DB/Firebase';
 import { useDispatch } from 'react-redux';
 import { loggedInUser } from '../Feuature/Slice/LoginSlice';
+import logoG from '../assets/images/logo/logoG.jpg'
 
 
 
@@ -36,10 +37,11 @@ export const Google = () => {
   return (
     <>
       <div className="text-center">
-        <h2 className=''>Or</h2>
-        <h4 onClick={handleLoginGoogle} className="google" style={{ cursor: 'pointer', }}>
+        <h2 className='or'>Or</h2>
+        <button onClick={handleLoginGoogle} className="google">
+          <img src={logoG} className='img-fluid logoG' alt="" />
           Login with Google
-        </h4>
+        </button>
       </div>
 
 

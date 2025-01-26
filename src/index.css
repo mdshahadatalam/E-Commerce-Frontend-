@@ -1836,5 +1836,27 @@ border: none;
 
 .google{
   cursor: pointer;
-  padding: 10px 0;
+  border: none;
+  width: auto;
+  height: 40px;
+  letter-spacing: 1px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: white;
+  transition: 0.5s;
+}
+.google:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
+  border:2px solid tomato;
+}
+
+.logoG{
+  width: 30px;
+}
+.or{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  padding: 5px 0;
 }
