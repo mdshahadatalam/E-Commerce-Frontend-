@@ -57,7 +57,7 @@ export const Forget = () => {
      }
   return (
     <>
-       <div className='Forget'>
+       <div className='Forget '>
             <div className=' bg-black p-4 text-center text-white ForgetSmall'>
                 <h1 className='forgetHeader'>Forget Password</h1>
                    <p className='text-white py-3 forgetText'>With that email you registered that's the email enter the fields below.</p>
