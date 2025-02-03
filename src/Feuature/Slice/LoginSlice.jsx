@@ -1,19 +1,31 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const userSlice = createSlice({
-    name:"login",
-    initialState:{
-        logged:JSON.parse(localStorage.getItem('user')) || null
-    },
-    reducers:{
-        loggedInUser:(state,action)=>{
-            state.logged  = action.payload
-        },
-        loggedOutUser:(state) =>{
-            state.logged = null
-        },
+const getUserFromStorage = () => {
+    try {
+        const user = localStorage.getItem('user');
+        return user ? JSON.parse(user) : null;
+    } catch (error) {
+        console.error("Error parsing user from localStorage:", error);
+        return null;
+    }
+};
 
+export const userSlice = createSlice({
+    name: "login",
+    initialState: {
+        logged: getUserFromStorage(),
     },
-})
-export const {loggedInUser,loggedOutUser} = userSlice.actions
+    reducers: {
+        loggedInUser: (state, action) => {
+            state.logged = action.payload;
+            localStorage.setItem('user', JSON.stringify(action.payload)); // Update localStorage
+        },
+        loggedOutUser: (state) => {
+            state.logged = null;
+            localStorage.removeItem('user'); // Clear localStorage on logout
+        },
+    },
+});
+
+export const { loggedInUser, loggedOutUser } = userSlice.actions;
 export default userSlice.reducer;
