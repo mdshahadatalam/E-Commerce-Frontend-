@@ -65,3 +65,14 @@
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
 }
+
+.back{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.back:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

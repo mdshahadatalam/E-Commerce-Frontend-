@@ -14,6 +14,7 @@ import { getAuth, signOut } from "firebase/auth";
 import { toast, ToastContainer } from 'react-toastify';
 import { useDispatch} from 'react-redux';
 import { loggedInUser } from '../Feuature/Slice/LoginSlice';
+import { CiSettings } from 'react-icons/ci';
 
 export const Navber = () => {
 
@@ -23,7 +24,10 @@ export const Navber = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
       
-    // console.log(location.pathname);
+ const handleSitting =(e)=>{
+  e.preventDefault()
+  navigate('/forget')
+ }
     
 
     const ShowSearch = (e)=>{
@@ -145,7 +149,6 @@ export const Navber = () => {
                 <span title='Search' className='icons'><IoMdSearch /></span>
             </a>
         </li>
-        {/* <li><a href=""><span title='Sign in' className='icons'>< FaRegUser  /></span> </a></li> */}
         <li><a href=""><span title='Wish' className='icons'><GiSelfLove /></span></a></li>
       
       
@@ -156,6 +159,7 @@ export const Navber = () => {
                  </span>
               </a>
         </li>
+        <li><a href=""><span onClick={handleSitting} title='Password Reset' className='icons'>< CiSettings   /></span> </a></li>
       </ul>
      
     </div>
@@ -232,7 +236,7 @@ export const Navber = () => {
           <span className='icons'><IoMdSearch /></span>
       </a>
   </li>
-  {/* <li><a href=""><span className='icons'><FaRegUser /></span></a></li> */}
+  <li><a href=""><span  onClick={handleSitting} className='icons'><CiSettings /></span></a></li>
   <li><a href=""><span className='icons'><GiSelfLove /></span></a></li>
 
 

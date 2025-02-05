@@ -13,6 +13,11 @@ export const Forget = () => {
     const [email, setEmail] = useState("");
     const [loader,setLoader] = useState(false)
 
+
+    const handleNavigate =()=>{
+      navigate("/")
+    }
+
       const handleEmailReset =(e)=>{
         setEmail(e.target.value)
       }
@@ -70,6 +75,8 @@ export const Forget = () => {
                           }
                           </button>
                  </form>
+
+                 <p onClick={handleNavigate} className='back'>Back To Home?</p>
             </div>
        </div>
 
