@@ -40,6 +40,36 @@ function App() {
 
 
             <Route element={<LoginInUserRoute/>}>
+                <Route  element={<RootLayout/>}> 
+                <Route path="/shopD" element={<ShopD />} />
+               <Route path="/shopCom" element={<ShopCom />} />
+               <Route path="/shopCard" element={<ShopCard />} />
+               <Route path="/shopCheck" element={<ShopCheck />} />
+              <Route path="/shopWish" element={<ShopWish />} />
+
+              <Route path="/blogClassic" element={<BlogClassic />} />
+              <Route path="/blogClWith" element={<BlogClWithSi />} />
+              <Route path="/blogD" element={<BlogD />} />
+                </Route>
+            </Route>
+
+
+    
+            
+
+              
+            <Route path="/signUp" element={<SignUp />} />
+            <Route path="/signIn" element={<SignIn />} />
+            <Route path="/forget" element={<Forget />} />
+
+
+
+     <Route element={<LogOutUserRoute/>}>
+
+            </Route>
+
+
+
             <Route element={<RootLayout/>}>  
          {/* Home  */}
         <Route path="/" element={<Home />} />
@@ -48,11 +78,7 @@ function App() {
           {/* SHop  */}
         <Route path="/shopGride" element={<ShopGride />} />
         <Route path="/shopGride2" element={<ShopGride2 />} />
-        <Route path="/shopD" element={<ShopD />} />
-        <Route path="/shopCom" element={<ShopCom />} />
-        <Route path="/shopCard" element={<ShopCard />} />
-        <Route path="/shopCheck" element={<ShopCheck />} />
-        <Route path="/shopWish" element={<ShopWish />} />
+        
          
          {/* Pages  */}
          <Route path="/about" element={<About />} />
@@ -63,19 +89,11 @@ function App() {
          <Route path="/feature" element={<Features />} />
              {/* Blogs  */}
          <Route path="/blog" element={<Blogs />} />
-         <Route path="/blogClassic" element={<BlogClassic />} />
-         <Route path="/blogClWith" element={<BlogClWithSi />} />
-         <Route path="/blogD" element={<BlogD />} />
 
         <Route path="/contact" element={<Contact />} />
-         </Route>
-            </Route>
 
-            <Route element={<LogOutUserRoute/>}>
-            <Route path="/signUp" element={<SignUp />} />
-            <Route path="/signIn" element={<SignIn />} />
-            <Route path="/forget" element={<Forget />} />
-            </Route>
+        
+         </Route>
 
       </Route>
     )

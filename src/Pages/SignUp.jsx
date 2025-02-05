@@ -3,24 +3,11 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { ShowNav } from '../Components/ShowNav';
 
-import { GiEternalLove } from "react-icons/gi";
-import { FaEye } from "react-icons/fa";
-import { BsBarChartLineFill } from "react-icons/bs";
-
-import product1 from '../assets/images/arobelaPro/Group 29.png'
-import product2 from '../assets/images/arobelaPro/Group 30.png'
-import product3 from '../assets/images/arobelaPro/product 3.png'
-import product4 from '../assets/images/arobelaPro/product 4.png'
-
-import item1 from '../assets/images/Items/Item 1.png'
-import item2 from '../assets/images/Items/Item 2.png'
-import item3 from '../assets/images/Items/Item 3.png'
 import { Link, useNavigate } from 'react-router-dom';
 import { use } from 'react';
 
-import { RxCross2 } from "react-icons/rx";
+
 import { useFormik } from 'formik';
-import values from './../../node_modules/lodash-es/values';
 import { signUp } from '../Validation/Validation';
 
 import { IoEyeOutline } from "react-icons/io5";
@@ -30,22 +17,20 @@ import { getAuth, createUserWithEmailAndPassword,sendEmailVerification  } from "
 import { toast, ToastContainer } from 'react-toastify';
 import { PulseLoader } from 'react-spinners';
 import { Google } from '../Components/Google';
+import { RxCross2 } from 'react-icons/rx';
 
 
 
 export const SignUp = () => {
      const auth = getAuth();
-     const [show,setShow] = useState(true)
      const [showPassword, setShowPassword] = useState(false);
      const navigate = useNavigate()
      const [loader,setLoader] = useState(false)
+
    const handleClose =() =>{
-     setShow(false)
+    navigate('/')
    }
 
-   const handleShow =()=>{
-     setShow(true)
-   }
 
      useEffect( ()=>{
          Aos.init();
@@ -129,113 +114,25 @@ export const SignUp = () => {
    <>
 
    {/* ShowNav  */}
-   <ShowNav setShow={setShow}/>
+   <ShowNav/>
 
 
 
  {/* beuati section  */}
  
 
- <section className='py-5'>
-         <div className="container">
-           <div className="row justify-content-center align-items-center">
-           <div className="col-lg-5 ">
-             <Link to={''}> <img onClick={handleShow} data-aos="zoom-in" data-aos-duration="1500" className='img-fluid' src={item1} alt="image" /></Link>
-             <Link to={''}> <img onClick={handleShow} data-aos="zoom-in" data-aos-duration="1500" className='pt-4 img-fluid' src={item3} alt="image" /></Link>
-           </div>
-           <div className="col-lg-7 d-flex justify-content-center">
-           <Link to={''}>   <img onClick={handleShow}  data-aos="zoom-in" data-aos-duration="1500" className='img-fluid pt-1' src={item2} alt="image" /></Link>
-           </div>
-           </div>
-         </div>
-       </section>
-
-       {/* arobera  */}
-
-       <section className='py-4'>
-              <div className="container">
-                
-                 <div className='align-items-center d-flex justify-content-around py-4'>
-                 <div>
-                        <div> <span onClick={handleShow} className='py-2'><GiEternalLove /></span></div>
-                       <div><span onClick={handleShow} className='py-2'><FaEye /></span></div>
-                       <div><span onClick={handleShow} className='py-2'><BsBarChartLineFill /></span> </div>
-                 </div>
-       
-                 <h4 className='new'>New Arrivals Products</h4>    </div> 
-        
-               <div className="row aroberaDirection ">
-                 <div className="col-lg-3 aroberaRes ">
-                   <Link to={''} className='link'> <img onClick={handleShow} className='img-fluid ProImg' src={product1} alt="image" /></Link>
-                      <div className='IconPossi'>
-                       <div> <Link to={''} className='link' > <span  onClick={handleShow} className='iconsWish'><GiEternalLove /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><FaEye /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span  onClick={handleShow}className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
-                      </div>
-                   <div>
-                   <h4 className='price pt-1'>$150.65</h4>
-                   <h4 className='lotion'>Lotion Shower gel</h4>
-                   </div>
-       
-                 </div>
-       
-       
-                 <div className="col-lg-3 aroberaRes ">
-                  <Link to={''} className='link'>  <img onClick={handleShow} className='img-fluid' src={product2} alt="image" /></Link>
-       
-                   <span className='discount'>-45%</span>
-                   <div className='IconPossi'>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><GiEternalLove /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><FaEye /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
-                      </div>
-                   <div>
-                   <h4 className='price pt-1'>$250.65</h4>
-                   <h4 className='lotion'>Argan Cream Body Butter</h4>
-                   </div>
-                 </div>
-       
-                 <div className="col-lg-3 aroberaRes ">
-                   <Link to={''} className='link'> <img onClick={handleShow} className='img-fluid' src={product3} alt="image" /></Link>
-                   <span className='discount'>50%</span>
-                   <div className='IconPossi'>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><GiEternalLove /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><FaEye /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
-                      </div>
-                   
-                   <h4 className='price pt-1'>$175.65</h4>
-                   <h4 className='lotion'>Manicure Gel</h4>
-                 </div>
-                 <div className="col-lg-3 aroberaRes ">
-                   <Link to={''} className='link'> <img onClick={handleShow} className='img-fluid' src={product4} alt="image" /></Link>
-                   <span className='discount'>New</span>
-                   <div className='IconPossi'>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><GiEternalLove /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><FaEye /></span></Link> </div>
-                       <div> <Link to={''} className='link' > <span onClick={handleShow} className='iconsWish'><BsBarChartLineFill /></span></Link> </div>
-                      </div>
-                  <div>
-                  <h4 className='price pt-1'>$75.65</h4>
-                  <h4 className='lotion'>Manicure Gel nails, makeup</h4>
-                  </div>
-                 </div>
-               </div>
-             </div>
-           </section>
 
 
 
 
-  {
-     show ?  <section className='signup'>
+  <section className='signup'>
      <div className="container">
           <div className="row ">
                <div className="col-lg-2"></div>
                <div className="col-lg-8 inpoSec">
                         <div>
                             <span onClick={handleClose} className='iconsCross'><RxCross2 /></span>
-                        </div>
+                         </div>
                     <div className='text-center'>
                                <h4 className='signUp'>Sign up new journey</h4>
 
@@ -329,8 +226,8 @@ export const SignUp = () => {
                 
           </div>
      </div>
-    </section> : null
-  }
+    </section> 
+
 
 
 <ToastContainer />
